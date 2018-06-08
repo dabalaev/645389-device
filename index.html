@@ -11,8 +11,9 @@
       </a>
       <ul class="user-navigation">
         <li>
-          Поиск по сайту
-          <!-- Поле поиска -->
+          <form class="site-search">
+            <input type="search" name="search" placeholder="Поиск по сайту">
+          </form>
         </li>
         <li>
           <a href="#">Войти</a>
@@ -77,6 +78,9 @@
             <p class="promo-slider-title">Делай селфи, как Бен Стиллер!</p>
             <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь(Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a href="#" class="button">Подробнее</a>
+            <button class="promo-slider-button">o</button>
+            <button class="promo-slider-button">o</button>
+            <button class="promo-slider-button">o</button>
             <table class="promo-slider-table">
               <tr class="promo-slider-table-value">
                 <td>8,5 м</td>
@@ -96,6 +100,9 @@
             <p class="promo-slider-title">Худеем правильно!</p>
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету</p>
             <a href="#" class="button">Подробнее</a>
+            <button class="promo-slider-button">o</button>
+            <button class="promo-slider-button">o</button>
+            <button class="promo-slider-button">o</button>
             <table class="promo-slider-table">
               <tr class="promo-slider-table-value">
                 <td>48 часов</td>
@@ -111,6 +118,9 @@
             <p class="promo-slider-title">Порхает как бабочка, жалит как пчела!</p>
             <p>Этот обычный на первый взгляд квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a href="#" class="button">Подробнее</a>
+            <button class="promo-slider-button">o</button>
+            <button class="promo-slider-button">o</button>
+            <button class="promo-slider-button">o</button>
             <table class="promo-slider-table">
               <tr class="promo-slider-table-value">
                 <td>800 м</td>
@@ -129,32 +139,32 @@
         <h2 class="visually-hidden">Категории товаров</h2>	
         <ul class="categories-list">
           <li class="categories-item">
-            <a class="categories-link">
+            <a class="categories-link" href="#">
               <p>Виртуальная реальность</p>
             </a>
           </li>
           <li class="categories-item">
-            <a class="categories-link">
+            <a class="categories-link" href="catalog.html">
               <p>Моноподы для селфи</p>
             </a>
           </li>
           <li class="categories-item">
-            <a class="categories-link">
+            <a class="categories-link" href="#">
               <p>Экшн-камеры</p>
             </a>
           </li>
           <li class="categories-item">
-            <a class="categories-link">
+            <a class="categories-link" href="#">
               <p>Фитнес-браслеты</p>
             </a>
           </li>
           <li class="categories-item">
-            <a class="categories-link">
+            <a class="categories-link" href="#">
               <p>Умные часы</p>
             </a>
           </li>
           <li class="categories-item">
-            <a class="categories-link">
+            <a class="categories-link" href="#">
               <p>Квадрокоптеры</p>
             </a>
           </li>
@@ -165,13 +175,13 @@
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-name">
           <li>
-            <span class="button">Доставка</span>	
+            <button class="button">Доставка</button>	
           </li>
           <li>
-            <span class="button">Гарантия</span>
+            <button class="button">Гарантия</button>
           </li>
           <li>
-            <span class="button">Кредит</span>
+            <button class="button">Кредит</button>
           </li>
         </ul>
         <ul class="services-slider">
@@ -230,17 +240,37 @@
             <li>Автотрейдинг</li>
             <li>ЖилДорЭкспедиция</li>
           </ul>
-          <a class="button" href="#">Подробнее о нас</a>
+          <button class="button">Подробнее о нас</button>
         </section>
         <section class="our-contacts">
           <h3>Контакты</h3>
           <p>Вы можете забрать товар сами, заехав к нам в офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <a class="our-contacts-item">
             <img src="img/map.jpg"  width="560" height="222" alt="Карта проезда">
-            <!-- увеличенная карта -->
           </a>
-          <a class="button" href="#">Напишите нам</a>
-          <!-- Форма -->
+          <div class="popup-map">
+            <button class="button-close">X</button>
+            <img src="img/map-big.png">
+          </div>
+          <button class="button">Напишите нам</button> 
+          <section class="write-to-us">
+            <form class="write-to-us-form" action="https://echo.htmlacademy.ru" method="post">
+              <button class="button-close" type="button">X</button>
+              <p class="write-to-us-item">
+                <label for="name">Ваше имя:</label>
+                <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+              </p>
+              <p class="write-to-us-item">
+                <label for="e-mail">Ваш e-mail:</label>
+                <input type="e-mail" name="e-mail" id="e-mail" placeholder="email@example.com">
+              </p>
+              <p class="write-to-us-item">
+                <label for="textarea">Текст письма:</label>
+                <textarea name="textarea" id="textarea">В свободной форме</textarea>
+              </p>
+              <button class="button" type="input">Отправить</button>
+            </form>
+          </section>  
         </section>
       </section>
     </main>
