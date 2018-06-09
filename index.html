@@ -11,7 +11,7 @@
       </a>
       <ul class="user-navigation">
         <li>
-          <form class="site-search">
+          <form class="site-search" action="https://echo.htmlacademy.ru" method="post">
             <input type="search" name="search" placeholder="Поиск по сайту">
           </form>
         </li>
@@ -250,25 +250,26 @@
           </a>
           <div class="popup-map">
             <button class="button-close">X</button>
-            <img src="img/map-big.png">
+            <img src="img/map-big.png" width="994" height="593" alt="Увеличенная карта проезда">
           </div>
           <button class="button">Напишите нам</button> 
           <section class="write-to-us">
+            <h3>Форма обратной связи</h3>
             <form class="write-to-us-form" action="https://echo.htmlacademy.ru" method="post">
               <button class="button-close" type="button">X</button>
-              <p class="write-to-us-item">
+              <div class="write-to-us-item">
                 <label for="name">Ваше имя:</label>
                 <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-              </p>
-              <p class="write-to-us-item">
+              </div>
+              <div class="write-to-us-item">
                 <label for="e-mail">Ваш e-mail:</label>
-                <input type="e-mail" name="e-mail" id="e-mail" placeholder="email@example.com">
-              </p>
-              <p class="write-to-us-item">
-                <label for="textarea">Текст письма:</label>
-                <textarea name="textarea" id="textarea">В свободной форме</textarea>
-              </p>
-              <button class="button" type="input">Отправить</button>
+                <input type="email" name="e-mail" id="e-mail" placeholder="email@example.com">
+              </div>
+              <div class="write-to-us-item">
+                <label for="comment">Текст письма:</label>
+                <textarea name="comment" id="comment" placeholder="В свободной форме"></textarea>
+              </div>
+              <button class="button" type="submit">Отправить</button>
             </form>
           </section>  
         </section>

@@ -11,8 +11,9 @@
       </a>
       <ul class="user-navigation">
         <li>
-          Поиск по сайту
-          <!-- Поле поиска -->
+          <form class="site-search" action="https://echo.htmlacademy.ru" method="post">
+            <input type="search" name="search" placeholder="Поиск по сайту">
+          </form>
         </li>
         <li>
           <a href="#">Войти</a>
@@ -85,7 +86,33 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <p>Фильтр:</p>
-        <!-- форма -->
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="filter-price">
+            <legend>Стоимость</legend>
+            <input type="range" name="range" min="0" max="8000">
+          </fieldset>
+          <fieldset class="filter-color">
+            <legend>Цвета</legend>
+            <input type="checkbox" name="checkbox-color" id="checkbox-color-black" value="black" checked="">
+            <label for="checkbox-color-black">Черный</label>
+            <input type="checkbox" name="checkbox-color" id="checkbox-color-white" value="white">
+            <label for="checkbox-color-white">Белый</label>
+            <input type="checkbox" name="checkbox-color" id="checkbox-color-blue" value="blue" checked="">
+            <label for="checkbox-color-blue">Синий</label>
+            <input type="checkbox" name="checkbox-color" id="checkbox-color-red" value="red" checked="">
+            <label for="checkbox-color-red">Красный</label>
+            <input type="checkbox" name="checkbox-color" id="checkbox-color-pinc" value="pinc">
+            <label for="checkbox-color-pinc">Розовый</label>
+          </fieldset>
+          <fieldset class="filter-bluetooth">
+            <legend>Bluetooth</legend>
+            <input type="radio" name="radio-bluetooth" id="radio-bluetooth-yes" value="yes" checked="">
+            <label for="radio-bluetooth-yes">Есть</label>
+            <input type="radio" name="radio-bluetooth" id="radio-bluetooth-no" value="no">
+            <label for="radio-bluetooth-no">Нет</label>
+          </fieldset>
+          <button class="button" type="submit">Показать</button>
+        </form>
       </section>
 
       <section class="catalog">
@@ -93,13 +120,23 @@
         <div class="sorting">
           <p>Сортировка:</p>
           <ul class="sorting-list">
-            <li>По цене</li>
-            <li>По типу</li>
-            <li>По популярности</li>
+            <li>
+              <button class="sorting-button">По цене</button>
+            </li>
+            <li>
+              <button class="sorting-button">По типу</button>
+            </li>
+            <li>
+              <button class="sorting-button">По популярности</button>
+            </li>
           </ul>
           <ul class="sorting-priority">
-            <li>⯅</li>
-            <li>⯆</li>
+            <li>
+              <button class="sorting-priority-button">⯅</button>
+            </li>
+            <li>
+              <button class="sorting-priority-button">⯆</button>
+            </li>
           </ul>
         </div>
         <ul class="catalog-list">
@@ -114,8 +151,8 @@
               <p class="catalog-item-price">500 руб.</p>
             </div>  
             <div class="catalog-item-hover">
-              <a href="#" class="button">В корзину</a>
-              <a href="#">Добавить к сравнению</a>
+              <button class="button add-basket-button">В корзину</button>
+              <button class="compare-button">Добавить к сравнению</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -129,8 +166,8 @@
               <p class="catalog-item-price">1500 руб.</p>
             </div>  
             <div class="catalog-item-hover">
-              <a href="#" class="button">В корзину</a>
-              <a href="#">Добавить к сравнению</a>
+              <button class="button add-basket-button">В корзину</button>
+              <button class="compare-button">Добавить к сравнению</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -144,8 +181,8 @@
               <p class="catalog-item-price">2500 руб.</p>
             </div>  
             <div class="catalog-item-hover">
-              <a href="#" class="button">В корзину</a>
-              <a href="#">Добавить к сравнению</a>
+              <button class="button add-basket-button">В корзину</button>
+              <button class="compare-button">Добавить к сравнению</button>
             </div>
           </li>
           <li class="catalog-item">
@@ -159,17 +196,27 @@
               <p class="catalog-item-price">4900 руб.</p>
             </div>
             <div class="catalog-item-hover">
-              <a href="#" class="button">В корзину</a>
-              <a href="#">Добавить к сравнению</a>
+              <button class="button add-basket-button">В корзину</button>
+              <button class="compare-button">Добавить к сравнению</button>
             </div>
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-item pagination-prev">Назад</li>
-          <li class="pagination-item">1</li>
-          <li class="pagination-item">2</li>
-          <li class="pagination-item">3</li>
-          <li class="pagination-item pagination-next">Вперед</li>
+          <li class="pagination-item pagination-prev">
+            <button class="pagination-button" >Назад</button>
+          </li>
+          <li class="pagination-item">
+            <button class="pagination-button">1</button>
+          </li>
+          <li class="pagination-item">
+            <button class="pagination-button">2</button>
+          </li>
+          <li class="pagination-item">
+            <button class="pagination-button">3</button>
+          </li>
+          <li class="pagination-item pagination-next">
+            <button class="pagination-button">Вперед</button>
+          </li>
         </ul>	
       </section> <!-- end .catalog -->
     </main>
