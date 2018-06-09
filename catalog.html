@@ -89,31 +89,47 @@
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="filter-price">
             <legend>Стоимость</legend>
-            <input type="range" name="range" min="0" max="8000">
+            <div class="filter-price-item">
+              <input type="range" name="range" min="0" max="8000">
+            </div>
           </fieldset>
           <fieldset class="filter-color">
             <legend>Цвета</legend>
-            <input type="checkbox" name="checkbox-color" id="checkbox-color-black" value="black" checked="">
-            <label for="checkbox-color-black">Черный</label>
-            <input type="checkbox" name="checkbox-color" id="checkbox-color-white" value="white">
-            <label for="checkbox-color-white">Белый</label>
-            <input type="checkbox" name="checkbox-color" id="checkbox-color-blue" value="blue" checked="">
-            <label for="checkbox-color-blue">Синий</label>
-            <input type="checkbox" name="checkbox-color" id="checkbox-color-red" value="red" checked="">
-            <label for="checkbox-color-red">Красный</label>
-            <input type="checkbox" name="checkbox-color" id="checkbox-color-pinc" value="pinc">
-            <label for="checkbox-color-pinc">Розовый</label>
+            <div class="filter-color-item">
+              <input type="checkbox" name="checkbox-color" id="checkbox-color-black" value="black" checked>
+              <label for="checkbox-color-black">Черный</label>
+            </div>
+            <div class="filter-color-item">
+              <input type="checkbox" name="checkbox-color" id="checkbox-color-white" value="white">
+              <label for="checkbox-color-white">Белый</label>
+            </div>
+            <div class="filter-color-item">
+              <input type="checkbox" name="checkbox-color" id="checkbox-color-blue" value="blue" checked>
+              <label for="checkbox-color-blue">Синий</label>
+            </div>
+            <div class="filter-color-item">
+              <input type="checkbox" name="checkbox-color" id="checkbox-color-red" value="red" checked>
+              <label for="checkbox-color-red">Красный</label>
+            </div>
+            <div class="filter-color-item">
+              <input type="checkbox" name="checkbox-color" id="checkbox-color-pinc" value="pinc">
+              <label for="checkbox-color-pinc">Розовый</label>
+            </div>  
           </fieldset>
           <fieldset class="filter-bluetooth">
             <legend>Bluetooth</legend>
-            <input type="radio" name="radio-bluetooth" id="radio-bluetooth-yes" value="yes" checked="">
-            <label for="radio-bluetooth-yes">Есть</label>
-            <input type="radio" name="radio-bluetooth" id="radio-bluetooth-no" value="no">
-            <label for="radio-bluetooth-no">Нет</label>
+            <div class="filter-bluetooth-item">  
+              <input type="radio" name="radio-bluetooth" id="radio-bluetooth-yes" value="yes" checked>
+              <label for="radio-bluetooth-yes">Есть</label>
+            </div>
+            <div class="filter-bluetooth-item">
+              <input type="radio" name="radio-bluetooth" id="radio-bluetooth-no" value="no">
+              <label for="radio-bluetooth-no">Нет</label>
+            </div>
           </fieldset>
           <button class="button" type="submit">Показать</button>
         </form>
-      </section>
+      </section> <!-- end .filters -->
 
       <section class="catalog">
         <h2 class="visually-hidden">Список моноподов для селфи</h2>
@@ -222,7 +238,7 @@
     </main>
 
     <footer class="main-footer">
-      <a class="footer-logo">
+      <a class="footer-logo" href="index.html">
         <img src="img/device-yellow-logo.png"  width="163" height="36" alt="Логотип компании DEVICE">
       </a>
       <ul class="footer-user-navigation">
@@ -260,7 +276,7 @@
           <a class="social-button" href="#">Твиттер</a>
         </li>
       </ul>
-      <a class="academy-logo">
+      <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/icons/htmlacademy-logo.svg" width="27" height="34" alt="HTML Academy">
       </a>
     </footer>
