@@ -12,7 +12,10 @@
       <ul class="user-navigation">
         <li>
           <form class="site-search" action="https://echo.htmlacademy.ru" method="post">
-            <input type="search" name="search" placeholder="Поиск по сайту">
+            <div class="site-search-item">
+              <label for="search" class="visually-hidden">Поиск по сайту</label>
+              <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+            </div>
           </form>
         </li>
         <li>
@@ -78,9 +81,15 @@
             <p class="promo-slider-title">Делай селфи, как Бен Стиллер!</p>
             <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь(Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a href="#" class="button">Подробнее</a>
-            <button class="promo-slider-button">o</button>
-            <button class="promo-slider-button">o</button>
-            <button class="promo-slider-button">o</button>
+            <button class="promo-slider-button">
+              <span class="visually-hidden">Перейти на первый слайд</span>
+            </button>
+            <button class="promo-slider-button">
+              <span class="visually-hidden">Перейти на второй слайд</span>
+            </button>
+            <button class="promo-slider-button">
+              <span class="visually-hidden">Перейти на третий слайд</span>
+            </button>
             <table class="promo-slider-table">
               <tr class="promo-slider-table-value">
                 <td>8,5 м</td>
@@ -100,9 +109,15 @@
             <p class="promo-slider-title">Худеем правильно!</p>
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету</p>
             <a href="#" class="button">Подробнее</a>
-            <button class="promo-slider-button">o</button>
-            <button class="promo-slider-button">o</button>
-            <button class="promo-slider-button">o</button>
+            <button class="promo-slider-button">
+              <span class="visually-hidden">Перейти на первый слайд</span>
+            </button>
+            <button class="promo-slider-button">
+              <span class="visually-hidden">Перейти на второй слайд</span>
+            </button>
+            <button class="promo-slider-button">
+              <span class="visually-hidden">Перейти на третий слайд</span>
+            </button>
             <table class="promo-slider-table">
               <tr class="promo-slider-table-value">
                 <td>48 часов</td>
@@ -118,9 +133,15 @@
             <p class="promo-slider-title">Порхает как бабочка, жалит как пчела!</p>
             <p>Этот обычный на первый взгляд квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a href="#" class="button">Подробнее</a>
-            <button class="promo-slider-button">o</button>
-            <button class="promo-slider-button">o</button>
-            <button class="promo-slider-button">o</button>
+            <button class="promo-slider-button">
+              <span class="visually-hidden">Перейти на первый слайд</span>
+            </button>
+            <button class="promo-slider-button">
+              <span class="visually-hidden">Перейти на второй слайд</span>
+            </button>
+            <button class="promo-slider-button">
+              <span class="visually-hidden">Перейти на третий слайд</span>
+            </button>
             <table class="promo-slider-table">
               <tr class="promo-slider-table-value">
                 <td>800 м</td>
@@ -249,14 +270,18 @@
             <img src="img/map.jpg"  width="560" height="222" alt="Карта проезда">
           </a>
           <div class="popup-map">
-            <button class="button-close">X</button>
+            <button class="button-close">
+              <span class="visually-hidden">Закрыть окно</span>
+            </button>
             <img src="img/map-big.png" width="994" height="593" alt="Увеличенная карта проезда">
           </div>
           <button class="button">Напишите нам</button> 
           <section class="write-to-us">
             <h3>Форма обратной связи</h3>
             <form class="write-to-us-form" action="https://echo.htmlacademy.ru" method="post">
-              <button class="button-close" type="button">X</button>
+              <button class="button-close" type="button">
+                <span class="visually-hidden">Закрыть окно</span>
+              </button>
               <div class="write-to-us-item">
                 <label for="name">Ваше имя:</label>
                 <input type="text" name="name" id="name" placeholder="Имя Фамилия">
@@ -306,16 +331,16 @@
       <a href="tel:+74954959595" class="company-phone">Тел: +7(495)495-95-95</a>
        <ul class="social-list">
         <li>
-          <a class="social-button" href="#">Фейсбук</a>
+          <a class="social-button" href="https://facebook.com/">Фейсбук</a>
         </li>
         <li>
-          <a class="social-button" href="#">Инстаграмм</a>
+          <a class="social-button" href="https://instagram.com/">Инстаграмм</a>
         </li>
         <li>
-          <a class="social-button" href="#">Твиттер</a>
+          <a class="social-button" href="https://twitter.com/">Твиттер</a>
         </li>
       </ul>
-      <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss" >
+      <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/icons/htmlacademy-logo.svg" width="27" height="34" alt="HTML Academy">
       </a>
     </footer>
