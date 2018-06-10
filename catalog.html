@@ -14,7 +14,7 @@
           <form class="site-search" action="https://echo.htmlacademy.ru" method="post">
             <div class="site-search-item">
               <label for="search" class="visually-hidden">Поиск по сайту</label>
-              <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+              <input id="search" type="search" name="search" placeholder="Поиск по сайту">
             </div>
           </form>
         </li>
@@ -90,45 +90,49 @@
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <p>Фильтр:</p>
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="filter-price">
-            <legend>Стоимость</legend>
+          <fieldset class="filter-fieldset">
+            <legend class="filter-legend">Стоимость</legend>
             <div class="filter-price-item">
               <input type="range" name="range" min="0" max="8000">
             </div>
           </fieldset>
-          <fieldset class="filter-color">
-            <legend>Цвета</legend>
-            <div class="filter-color-item">
-              <input type="checkbox" name="checkbox-color" id="checkbox-color-black" value="black" checked>
-              <label for="checkbox-color-black">Черный</label>
-            </div>
-            <div class="filter-color-item">
-              <input type="checkbox" name="checkbox-color" id="checkbox-color-white" value="white">
-              <label for="checkbox-color-white">Белый</label>
-            </div>
-            <div class="filter-color-item">
-              <input type="checkbox" name="checkbox-color" id="checkbox-color-blue" value="blue" checked>
-              <label for="checkbox-color-blue">Синий</label>
-            </div>
-            <div class="filter-color-item">
-              <input type="checkbox" name="checkbox-color" id="checkbox-color-red" value="red" checked>
-              <label for="checkbox-color-red">Красный</label>
-            </div>
-            <div class="filter-color-item">
-              <input type="checkbox" name="checkbox-color" id="checkbox-color-pinc" value="pinc">
-              <label for="checkbox-color-pinc">Розовый</label>
-            </div>  
+          <fieldset class="filter-fieldset">
+            <legend class="filter-legend">Цвета</legend>
+            <ul class="filter-color-list">
+              <li class="filter-color-item">
+                <input id="checkbox-color-black" type="checkbox" name="color" value="black" checked>
+                <label for="checkbox-color-black">Черный</label>
+              </li>
+              <li class="filter-color-item">
+                <input id="checkbox-color-white" type="checkbox" name="color" value="white">
+                <label for="checkbox-color-white">Белый</label>
+              </li>
+              <li class="filter-color-item">
+                <input id="checkbox-color-blue" type="checkbox" name="color" value="blue" checked>
+                <label for="checkbox-color-blue">Синий</label>
+              </li>
+              <li class="filter-color-item">
+                <input id="checkbox-color-red" type="checkbox" name="color" value="red" checked>
+                <label for="checkbox-color-red">Красный</label>
+              </li>
+              <li class="filter-color-item">
+                <input id="checkbox-color-pink" type="checkbox" name="color" value="pink">
+                <label for="checkbox-color-pink">Розовый</label>
+              </li>
+            </ul>  
           </fieldset>
-          <fieldset class="filter-bluetooth">
-            <legend>Bluetooth</legend>
-            <div class="filter-bluetooth-item">  
-              <input type="radio" name="radio-bluetooth" id="radio-bluetooth-yes" value="yes" checked>
-              <label for="radio-bluetooth-yes">Есть</label>
-            </div>
-            <div class="filter-bluetooth-item">
-              <input type="radio" name="radio-bluetooth" id="radio-bluetooth-no" value="no">
-              <label for="radio-bluetooth-no">Нет</label>
-            </div>
+          <fieldset class="filter-fieldset">
+            <legend class="filter-legend">Bluetooth</legend>
+            <ul class="filter-bluetooth-list">
+              <li class="filter-bluetooth-item">  
+                <input id="radio-bluetooth-yes" type="radio" name="bluetooth" value="yes" checked>
+                <label for="radio-bluetooth-yes">Есть</label>
+              </li>
+              <li class="filter-bluetooth-item">
+                <input id="radio-bluetooth-no" type="radio" name="bluetooth" value="no">
+                <label for="radio-bluetooth-no">Нет</label>
+              </li>
+            </ul>  
           </fieldset>
           <button class="button" type="submit">Показать</button>
         </form>
@@ -138,23 +142,23 @@
         <h2 class="visually-hidden">Список моноподов для селфи</h2>
         <div class="sorting">
           <p>Сортировка:</p>
-          <ul class="sorting-list">
+          <ul class="sorting-category-list">
             <li>
-              <button class="sorting-button">По цене</button>
+              <a class="sorting-category-item">По цене</a>
             </li>
             <li>
-              <button class="sorting-button">По типу</button>
+              <a class="sorting-category-item">По типу</a>
             </li>
             <li>
-              <button class="sorting-button">По популярности</button>
+              <a class="sorting-category-item">По популярности</a>
             </li>
           </ul>
           <ul class="sorting-priority">
             <li>
-              <button class="sorting-priority-button">⯅</button>
+              <a class="sorting-priority-item">⯅</a>
             </li>
             <li>
-              <button class="sorting-priority-button">⯆</button>
+              <a class="sorting-priority-item">⯆</a>
             </li>
           </ul>
         </div>
@@ -170,8 +174,8 @@
               <p class="catalog-item-price">500 руб.</p>
             </div>  
             <div class="catalog-item-hover">
-              <button class="button add-basket-button">В корзину</button>
-              <button class="compare-button">Добавить к сравнению</button>
+              <a class="button add-basket-link" href="#">В корзину</a>
+              <a class="compare-link" href="#">Добавить к сравнению</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -185,8 +189,8 @@
               <p class="catalog-item-price">1500 руб.</p>
             </div>  
             <div class="catalog-item-hover">
-              <button class="button add-basket-button">В корзину</button>
-              <button class="compare-button">Добавить к сравнению</button>
+              <a class="button add-basket-link" href="#">В корзину</a>
+              <a class="compare-link" href="#">Добавить к сравнению</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -200,8 +204,8 @@
               <p class="catalog-item-price">2500 руб.</p>
             </div>  
             <div class="catalog-item-hover">
-              <button class="button add-basket-button">В корзину</button>
-              <button class="compare-button">Добавить к сравнению</button>
+              <a class="button add-basket-link" href="#">В корзину</a>
+              <a class="compare-link" href="#">Добавить к сравнению</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -215,26 +219,26 @@
               <p class="catalog-item-price">4900 руб.</p>
             </div>
             <div class="catalog-item-hover">
-              <button class="button add-basket-button">В корзину</button>
-              <button class="compare-button">Добавить к сравнению</button>
+              <a class="button add-basket-link" href="#">В корзину</a>
+              <a class="compare-link" href="#">Добавить к сравнению</a>
             </div>
           </li>
         </ul>
         <ul class="pagination-list">
           <li class="pagination-item pagination-prev">
-            <button class="pagination-button" >Назад</button>
+            <a class="pagination-link" href="#">Назад</a>
           </li>
           <li class="pagination-item">
-            <button class="pagination-button">1</button>
+            <a class="pagination-link" href="#">1</a>
           </li>
           <li class="pagination-item">
-            <button class="pagination-button">2</button>
+            <a class="pagination-link" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <button class="pagination-button">3</button>
+            <a class="pagination-link" href="#">3</a>
           </li>
           <li class="pagination-item pagination-next">
-            <button class="pagination-button">Вперед</button>
+            <a class="pagination-link" href="#">Вперед</a>
           </li>
         </ul>	
       </section> <!-- end .catalog -->
@@ -270,13 +274,19 @@
       <a href="tel:+74954959595" class="company-phone">Тел: +7(495)495-95-95</a>
        <ul class="social-list">
         <li>
-          <a class="social-button" href="#">Фейсбук</a>
+          <a class="social-button" href="https://facebook.com/">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
         </li>
         <li>
-          <a class="social-button" href="#">Инстаграмм</a>
+          <a class="social-button" href="https://instagram.com/">
+            <span class="visually-hidden">Инстаграмм</span>
+          </a>
         </li>
         <li>
-          <a class="social-button" href="#">Твиттер</a>
+          <a class="social-button" href="https://twitter.com/">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
         </li>
       </ul>
       <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
