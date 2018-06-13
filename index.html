@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин DEVICE</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -32,30 +34,32 @@
         <ul class="site-navigation">
           <li class="site-nav-item">
             <a href="#">Каталог товаров</a>
-            <ul class="sub-navigation">
-              <li class="sub-nav-item">
-                <a href="#">Виртуальная реальность</a>
-              </li>
-              <li class="sub-nav-item">
-                <a href="catalog.html">Моноподы для селфи</a>
-              </li>
-              <li class="sub-nav-item">
-                <a href="#">Экшн-камеры</a>
-              </li>
-            </ul>
-            <ul class="sub-navigation2"> 
-              <li class="sub-nav-item">
-                <a href="#">Фитнес-браслеты</a>
-              </li>
-              <li class="sub-nav-item">
-                <a href="#">Умные часы</a>
-              </li>
-            </ul>
-            <ul class="sub-navigation3">  
-              <li class="sub-nav-item">
-                <a href="#">Квадрокоптеры</a>
-              </li>
-            </ul>
+            <div class="sub-navigation">
+              <ul class="sub-navigation-list">
+                <li class="sub-nav-item">
+                  <a href="#">Виртуальная реальность</a>
+                </li>
+                <li class="sub-nav-item">
+                 <a href="catalog.html">Моноподы для селфи</a>
+                </li>
+                <li class="sub-nav-item">
+                  <a href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="sub-navigation-list"> 
+                <li class="sub-nav-item">
+                  <a href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="sub-nav-item">
+                  <a href="#">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="sub-navigation-list">  
+                <li class="sub-nav-item">
+                  <a href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+          </div>
           </li>
           <li class="site-nav-item">
             <a href="#">Доставка</a>
@@ -183,13 +187,13 @@
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-name">
           <li>
-            <button class="button">Доставка</button>	
+            <button class="button button-services">Доставка</button>	
           </li>
           <li>
-            <button class="button">Гарантия</button>
+            <button class="button button-services">Гарантия</button>
           </li>
           <li>
-            <button class="button">Кредит</button>
+            <button class="button button-services">Кредит</button>
           </li>
         </ul>
         <ul class="services-slider">
@@ -246,7 +250,7 @@
           <ul class="about-us-list">
             <li>Деловые Линии</li>
             <li>Автотрейдинг</li>
-            <li>ЖилДорЭкспедиция</li>
+            <li>ЖелДорЭкспедиция</li>
           </ul>
           <button class="button">Подробнее о нас</button>
         </section>
