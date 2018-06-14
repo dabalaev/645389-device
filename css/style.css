@@ -182,6 +182,7 @@ a {
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 0.2em;
+	text-transform: uppercase;
 }
 
 .footer-user-navigation a:hover,
