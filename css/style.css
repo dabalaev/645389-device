@@ -426,3 +426,26 @@ a {
 	border-bottom: 2px, solid, #000000;
 	color: rgba(0, 0, 0, 1);
 }*/ 
+
+.button-close {
+	background-color: #f7e296;
+	border: none;
+}
+
+.button-close:hover {
+	background-color: #f0c52e;
+}
+
+.button-close:active {
+	background-color: #faedc0;
+}
+
+.dji-logo {
+	background-image: url("../img/dji-logo.png");
+	width: 260px;
+	height: 100px;
+}
+
+.dji-logo:hover {
+	background-image: url("../img/dji-color-logo.png");
+}
