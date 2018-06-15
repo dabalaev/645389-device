@@ -633,10 +633,26 @@ body {
 	display: flex;
 	min-width: 1160px;
 	margin-left: 20px;
+	align-items: baseline;
 }
 
 .sub-navigation {
 	display: flex;
 	min-width: 570px;
 	margin-left: -40px;
+}
+
+.promo-slider-item {
+	display: flex;
+}
+
+.slide-image-wrapper {
+	width: 580px;
+	padding-right: auto;
+}
+
+.slide-info-wrapper {
+	width: 520px;
+	padding-left: 20px;
+	padding-right: 20px; 
 }
