@@ -1,40 +1,44 @@
 @font-face {
-	font-family: "opensans";
-	src: url("../fonts/opensans.woff2") format("woff2"),
-		 url("../fonts/opensans.woff") format("woff");
+	font-family: "Open Sans";
+	src:
+		url("../fonts/opensans.woff2") format("woff2"),
+		url("../fonts/opensans.woff") format("woff");
 	font-style: normal;
-	font-weight: normal;
+	font-weight: 400;
 }
 
 @font-face {
-	font-family: "opensanslight";
-	src: url("../fonts/opensanslight.woff2") format("woff2"),
-		 url("../fonts/opensanslight.woff") format("woff");
+	font-family: "Open Sans Light";
+	src:
+		url("../fonts/opensanslight.woff2") format("woff2"),
+		url("../fonts/opensanslight.woff") format("woff");
 	font-style: normal;
-	font-weight: light;
+	font-weight: 300;
 }
 
 @font-face {
-	font-family: "gilroyextrabold";
-	src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
-		 url("../fonts/gilroyextrabold.woff") format("woff");
+	font-family: "Gilroy Extrabold";
+	src:
+		url("../fonts/gilroyextrabold.woff2") format("woff2"),
+		url("../fonts/gilroyextrabold.woff") format("woff");
 	font-style: normal;
-	font-weight: heavy;
+	font-weight: 800;
 }
 
 @font-face {
-	font-family: "gilroylight";
-	src: url("../fonts/gilroylight.woff2") format("woff2"),
-		 url("../fonts/gilroylight.woff") format("woff");
+	font-family: "Gilroy Light";
+	src:
+		url("../fonts/gilroylight.woff2") format("woff2"),
+		url("../fonts/gilroylight.woff") format("woff");
 	font-style: normal;
-	font-weight: light;
+	font-weight: 300;
 }
 
 body {
 	margin: 0;
 	padding: 0;
 
-	font-family: "opensans", "arial", sans-serif; 
+	font-family: "Opensans", "Arial", sans-serif; 
 	font-size: 15px;
 	line-height: 30px;
 	letter-spacing: 0.01em;
@@ -53,51 +57,55 @@ a {
 }
 
 .main-navigation {
-	font-family: "gilroyextrabold";
+	font-family: "Gilroy Extrabold";
 	font-size: 18px;
 	line-height: 24px;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 }
 
-.user-navigation,
-.site-navigation,
-.sub-navigation-list,
-.categories-list,
-.services-slider,
-.promo-slider-list,
-.services-name,
-.brands-list,
-.about-us-list,
-.footer-user-navigation,
-.footer-navigation,
-.social-list {
-	list-style: none;
-}
-
-.user-navigation a,
-.site-navigation a,
-.sub-navigation-list a,
-.categories-list a {
+.main-navigation a {
 	color: rgba(0, 0, 0, 1);
 }
 
-.user-navigation a:hover,
-.site-navigation a:hover,
-.sub-navigation-list a:hover,
-.categories-list a:hover {
+.main-navigation a:hover {
 	color: rgba(0, 0, 0, 0.6);
 }
 
-.user-navigation a:active,
-.site-navigation a:active,
-.sub-navigation-list a:active,
-.categories-list a:active {
+.main-navigation a:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.user-navigation {
+	list-style: none;
+}
+
+.user-navigation a {
+	color: rgba(0, 0, 0, 1);
+}
+
+.user-navigation a:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.user-navigation a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation {
+	list-style: none;
+}
+
+.site-nav-item span {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.sub-navigation-list {
+	list-style: none;
+}
+
 .promo-slider-title {
-	font-family: "gilroyextrabold";
+	font-family: "Gilroy Extrabold";
 	font-size: 47px;
 	line-height: 56px;
 	letter-spacing: 0.01em;
@@ -112,39 +120,69 @@ a {
 }
 
 .promo-slider-table-value {
-	font-family: gilroylight;
+	font-family: "Gilroy Light";
 	font-size: 36px;
 	line-height: 48px;
 	letter-spacing: 0.01em;
 }
 
-
 .categories {
-	font-family: gilroyextrabold;
+	font-family: "Gilroy Extrabold";
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 0.01em;
 }
 
-.categories-item {
-	background-color: #f7e296;
+.categories-list {
+	list-style: none;
 }
 
-.categories-item:hover {
-	background-color: #f0c52e;
+.categories-list a {
+	color: rgba(0, 0, 0, 1);
 }
 
-.categories-item:active {
-	background-color: #f0c52e;
+.categories-list a:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.categories-list a:active {
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .services {
 	background-color: #e5e5e5;
 }
 
-.services-slider-item h3,
+.services-name {
+	list-style: none;
+}
+
+.services-slider {
+	list-style: none;
+}
+
+.services-slider-item h3 {
+	font-family: "Gilroy Extrabold";
+	font-size: 47px;
+	line-height: 48px;
+	letter-spacing: 0.01em;
+	color: #000000;
+}
+
+.promo-slider-list {
+	list-style: none;
+}
+
+.brands-list {
+	list-style: none;
+}
+
+.about-us-list {
+	list-style: none;
+}
+
 .company-info h3 {
-	font-family: gilroyextrabold;
+	font-family: "Gilroy Extrabold";
 	font-size: 47px;
 	line-height: 48px;
 	letter-spacing: 0.01em;
@@ -152,13 +190,13 @@ a {
 }
 
 .company-info p {
-	font-family: opensanslight;
+	font-family: "Open Sans Light";
 	font-size: 15px;
 	line-height: 30px;
 }
 
 .about-us-list {
-	font-family: gilroyextrabold;
+	font-family: "Gilroy Extrabold";
 	font-size: 16px;
 	line-height: 40px;
 	color: #000000;
@@ -174,62 +212,74 @@ a {
 }
 
 .footer-user-navigation {
+	list-style: none;
 	line-height: 36px;
 }
 
 .footer-navigation {
-	font-family: gilroyextrabold;
+	list-style: none;
+	font-family: "Gilroy Extrabold";
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
 }
 
-.footer-user-navigation a:hover,
+.footer-user-navigation a:hover {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-user-navigation a:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
 .footer-navigation a:hover {
 	color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-user-navigation a:active,
 .footer-navigation a:active {
 	color: rgba(255, 255, 255, 0.3);
 }
 
+.social-list {
+	list-style: none;
+}
+
+.our-address {
+	font-style: normal;
+}
+
 .write-to-us-item {
-	font-family: opensans;
+	font-family: "Open Sans";
 	font-size: 14px;
 	line-height: 18px;
 }
 
 .write-to-us-item label{
-	font-family: gilroyextrabold;
+	font-family: "Gilroy Extrabold";
 	font-size: 18px;
 	line-height: 24px;
 	color: #000000;
 }
 
-.breadcrumbs,
-.filter-list,
-.sorting-category-list,
-.sorting-priority,
-.catalog-list,
-.pagination-list {
-	list-style: none;
-}
-
 .page-title {
-	font-family: gilroyextrabold;
+	font-family: "Gilroy Extrabold";
 	font-size: 47px;
 	line-height: 48px;
 	letter-spacing: 0.01em;
 	color: #000000;
 }
 
-.breadcrumbs a {
-	font-family: opensanslight;
+.breadcrumbs {
+	list-style: none;
+	font-family: "Open Sans Light";
 	font-size: 14px;
 	line-height: 24px;
 	letter-spacing: 0.01;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a {
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -241,28 +291,30 @@ a {
 	color: rgba(0, 0, 0, 0.1);
 }
 
+.breadcrumbs-current {
+	color: rgba(0, 0, 0, 0.3);
+}
 
 .filter-form {
 	background-color: #efefef;
 }
 
-.filters h3 {
-	background-color: #dbdbdb;
+.filter-list {
+	list-style: none;
 }
 
-.filters h3,
-.sorting p,
-.pagination-link {
-	font-family: gilroyextrabold;
+.filters h3 {
+	font-family: "Gilroy Extrabold";
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 0.2em;
-	color: #000000;
 	text-transform: uppercase;
+	color: #000000;
+	background-color: #dbdbdb;
 }
 
 .filter-legend {
-	font-family: gilroyextrabold;
+	font-family: "Gilroy Extrabold";
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 0.01;
@@ -270,38 +322,72 @@ a {
 }
 
 .filter-item label {
-	font-family: opensanslight;
+	font-family: "Open Sans Light";
 	font-size: 14px;
 	line-height: 40px;
 	letter-spacing: 0.01;
 	color: #000000;
 }
 
-.sorting,
-.pagination-list {
+.sorting {
 	background-color: #ebebeb;
 }
 
+.sorting p {
+	font-family: "Gilroy Extrabold";
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.2em;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.sorting-category-list {
+	list-style: none;
+}
+
+.sorting-category-list a {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-category-list a:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-category-list a:active {
+	color: rgba(0, 0, 0, 1);
+}
+
 .sorting-category-item {
-	font-family: opensans;
+	font-family: "Open Sans";
 	font-size: 14px;
 	line-height: 18px;
 }
 
-.sorting-category-list a,
-.sorting-priority a,
+.sorting-priority {
+	list-style: none;
+}
+
+.sorting-priority a {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-priority a:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-priority a:active {
+	color: rgba(0, 0, 0, 1);
+}
+
 .pagination-item a {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.sorting-category-list a:hover,
-.sorting-priority a:hover,
 .pagination-item a:hover {
 	color: rgba(0, 0, 0, 0.6);
 }
 
-.sorting-category-list a:active,
-.sorting-priority a:active,
 .pagination-item a:active {
 	color: rgba(0, 0, 0, 1);
 }
@@ -324,8 +410,21 @@ a {
 	background-color: #d9d9d9;
 }
 
+.pagination-link {
+	font-family: "Gilroy Extrabold";
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.2em;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.catalog-list {
+	list-style: none;
+}
+
 .catalog-item-info a {
-	font-family: gilroyextrabold;
+	font-family: "Gilroy Extrabold";
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 0.01em;
@@ -333,34 +432,47 @@ a {
 }
 
 .catalog-item-price {
-	font-family: opensanslight;
+	font-family: "Open Sans Light";
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 0.01;
 }
 
 .add-basket-link {
-	font-family: gilroyextrabold;
+	font-family: "Gilroy Extrabold";
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 0.2em;
 }
 
 .compare-link {
-	font-family: opensanslight;
+	font-family: "Open Sans Light";
 	font-size: 13px;
 	line-height: 36px;
 	letter-spacing: 0.01;
 }
 
-.catalog-item-hover a {
+.compare-link {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.compare-link:hover {
 	color: rgba(0, 0, 0, 1);
+}
+
+.compare-link:active {
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.pagination-list {
+	list-style: none;
+	background-color: #ebebeb;
 }
 
 .button {
 	color: #000000;
 	background-color: #f0c52e;
-	font-family: gilroyextrabold;
+	font-family: "Gilroy Extrabold";
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 0.2em;
@@ -390,7 +502,7 @@ a {
 	background-color: #f2f2f2;
 	color: rgba(70, 70, 70, 0.4);
 
-	font-family: opensans;
+	font-family: "Open Sans";
 	font-size: 14px;
 	line-height: 18px;
 }
@@ -416,6 +528,11 @@ a {
 	border: none;
 	background-color: #f7e296;
 	color: rgba(0, 0, 0, 0.3);
+}
+
+.write-to-us-item input::placeholder,
+.write-to-us-item textarea::placeholder {
+	color: rgba(70, 70, 70, 0.4);
 }
 
 /*.site-search-item input:hover {
