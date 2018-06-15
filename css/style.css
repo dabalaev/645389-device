@@ -137,15 +137,15 @@ a {
 	list-style: none;
 }
 
-.categories-list a {
+.categories-link {
 	color: rgba(0, 0, 0, 1);
 }
 
-.categories-list a:hover {
+.categories-link:hover {
 	color: rgba(0, 0, 0, 0.6);
 }
 
-.categories-list a:active {
+.categories-link:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -346,15 +346,15 @@ a {
 	list-style: none;
 }
 
-.sorting-category-list a {
+.sorting-category-item {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.sorting-category-list a:hover {
+.sorting-category-item:hover {
 	color: rgba(0, 0, 0, 0.6);
 }
 
-.sorting-category-list a:active {
+.sorting-category-item:active {
 	color: rgba(0, 0, 0, 1);
 }
 
@@ -368,27 +368,35 @@ a {
 	list-style: none;
 }
 
-.sorting-priority a {
+.sorting-priority-item {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.sorting-priority a:hover {
+.sorting-priority-item:hover {
 	color: rgba(0, 0, 0, 0.6);
 }
 
-.sorting-priority a:active {
+.sorting-priority-item:active {
 	color: rgba(0, 0, 0, 1);
 }
 
-.pagination-item a {
+.pagination-link {
+	font-family: "Gilroy Extrabold";
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+
+.pagination-link {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.pagination-item a:hover {
+.pagination-link:hover {
 	color: rgba(0, 0, 0, 0.6);
 }
 
-.pagination-item a:active {
+.pagination-link:active {
 	color: rgba(0, 0, 0, 1);
 }
 
@@ -408,15 +416,6 @@ a {
 .pagination-next a:active {
 	color: rgba(0, 0, 0, 0.3);
 	background-color: #d9d9d9;
-}
-
-.pagination-link {
-	font-family: "Gilroy Extrabold";
-	font-size: 16px;
-	line-height: 24px;
-	letter-spacing: 0.2em;
-	color: #000000;
-	text-transform: uppercase;
 }
 
 .catalog-list {
