@@ -117,6 +117,15 @@ a {
 	text-transform: none;
 }
 
+.promo-slider-number {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 179.2px;
+	line-height: 179.2px;
+	letter-spacing: 0.01em;
+	/*color: white;*/
+}
+
 .promo-slider-title {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
