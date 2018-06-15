@@ -108,6 +108,15 @@ a {
 	list-style: none;
 }
 
+.sub-nav-item {
+	font-family: "Open Sans", "Arial", sans-serif; 
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 36px;
+	letter-spacing: 0.01em;
+	text-transform: none;
+}
+
 .promo-slider-title {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
@@ -592,4 +601,42 @@ a {
 
 .dji-logo:hover {
 	background-image: url("../img/dji-color-logo.png");
+}
+
+body {
+	min-width: 1200px;
+	min-height: 1800px;
+}
+
+.main-header {
+	display: flex;
+	flex-direction: column;
+	width: 1160px;
+	min-height: 300px;
+	margin-top: 40px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.main-header-logo {
+	margin-left: 60px;
+	margin-top: -20px;
+}
+
+.user-navigation {
+	display: flex;
+	min-width: 1160px;
+	margin-left: 20px;
+}
+
+.site-navigation {
+	display: flex;
+	min-width: 1160px;
+	margin-left: 20px;
+}
+
+.sub-navigation {
+	display: flex;
+	min-width: 570px;
+	margin-left: -40px;
 }
