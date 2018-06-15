@@ -38,13 +38,12 @@ body {
 	margin: 0;
 	padding: 0;
 
-	font-family: "Opensans", "Arial", sans-serif; 
+	font-family: "Open Sans", "Arial", sans-serif; 
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 30px;
 	letter-spacing: 0.01em;
 	color: #464646;
-	text-transform: ;
 
 	background-color: #ffffff;
 }
@@ -359,8 +358,8 @@ a {
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 0.2em;
-	color: #000000;
 	text-transform: uppercase;
+	color: #000000;
 }
 
 .sorting-category-list {
@@ -496,17 +495,17 @@ a {
 }
 
 .button {
-	color: #000000;
-	background-color: #f0c52e;
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
-	border: none;
 	text-align: center;
 	vertical-align: middle;
+	border: none;
+	color: #000000;
+	background-color: #f0c52e;
 }
 
 .button:hover {
@@ -525,14 +524,13 @@ a {
 
 .write-to-us-item input,
 .write-to-us-item textarea {
-	border: none;
-	background-color: #f2f2f2;
-	color: rgba(70, 70, 70, 0.4);
-
 	font-family: "Open Sans", "Arial", sans-serif; 
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
+	border: none;
+	background-color: #f2f2f2;
+	color: rgba(70, 70, 70, 0.4);
 }
 
 .write-to-us-item input:hover,
