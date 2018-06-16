@@ -625,30 +625,48 @@ body {
 	margin-top: 40px;
 	margin-left: 20px;
 	margin-right: 20px;
+	align-items: center;
+
+	outline: green solid 1px;
 }
 
 .main-header-logo {
-	margin-left: 60px;
+	width: 163px;
+	height: 36px;
+	margin-left: -880px;
 	margin-top: -20px;
+	margin-bottom: 35px; 
+
+	outline: red solid 1px;
 }
 
 .user-navigation {
 	display: flex;
-	min-width: 1160px;
-	margin-left: 20px;
+	width: 1040px;
+	margin: 0px;
+	margin-bottom: 50px;
+	padding: 0px;
+
+	outline: blue solid 1px;
 }
 
 .site-navigation {
 	display: flex;
-	min-width: 1160px;
-	margin-left: 20px;
+	width: 1040px;
+	margin: 0px;
+	padding: 0px;
 	align-items: baseline;
+
+	outline: yellow solid 1px;
 }
 
 .sub-navigation {
 	display: flex;
-	min-width: 570px;
-	margin-left: -40px;
+	width: 570px;
+	margin-top: 10px;
+	/*margin-left: -40px;*/
+
+	outline: black solid 1px;
 }
 
 .promo-slider-item {
@@ -664,4 +682,34 @@ body {
 	width: 520px;
 	padding-left: 20px;
 	padding-right: 20px; 
+}
+
+.categories-list {
+	display: flex;
+	width: 1160px;
+	margin-left: -20px;
+}
+
+.categories-item {
+	width: 160px;
+	padding: 10px;
+}
+
+.services-wrapper {
+	display: flex;
+	width: 1160px;
+
+	outline: green solid 1px;
+}
+
+.services-name {
+	width: 300px;
+
+	outline: blue solid 1px;
+}
+
+.services-slider {
+	width: 800px;
+	
+	outline: red solid 1px;
 }
