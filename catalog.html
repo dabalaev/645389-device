@@ -75,17 +75,20 @@
     </header>
 
     <main class="container">
-      <h1 class="page-title">Моноподы для селфи</h1>
-      <ol class="breadcrumbs">
-        <li>
-          <a href="index.html">Главная</a>
-        </li>
-        <li>
-          <a href="#">Каталог товаров</a>
-        </li>
-        <li class="breadcrumbs-current">Моноподы для селфи</li>
-      </ol>
-
+      <div class="title-wrapper">
+        <h1 class="page-title">Моноподы для селфи</h1>
+        <ol class="breadcrumbs">
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li>
+            <a href="#">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs-current">Моноподы для селфи</li>
+        </ol>
+      </div>
+      <div class="main-wrapper">
+      
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <h3>Фильтр:</h3>
@@ -97,7 +100,7 @@
             </div>
           </fieldset>
           <fieldset class="filter-fieldset">
-            <legend class="filter-legend">Цвета</legend>
+            <legend class="filter-legend">Цвет</legend>
             <ul class="filter-list">
               <li class="filter-item">
                 <input id="checkbox-color-black" type="checkbox" name="color" value="black" checked>
@@ -242,36 +245,42 @@
           </li>
         </ul>	
       </section> <!-- end .catalog -->
+      </div>
     </main>
 
     <footer class="main-footer">
-      <a class="footer-logo" href="index.html">
-        <img src="img/device-yellow-logo.png"  width="163" height="36" alt="Логотип компании DEVICE">
-      </a>
-      <ul class="footer-user-navigation">
-        <li>
-          <a href="#">Войти</a>
-        </li>
-        <li>
-          <a href="#">Сравнить</a>
-        </li>
-        <li>
-          <a href="#">Корзина</a>
-        </li>
-      </ul>
-      <address class="our-address">г.Москва, ул.Строителей, 15</address>
-      <ul class="footer-navigation">
-        <li>
-          <a href="#">Доставка</a>
-        </li>
-        <li>
-          <a href="#">Гарантия</a>
-        </li>
-        <li>
-          <a href="#">Контакты</a>
-        </li>
-      </ul>
-      <a href="tel:+74954959595" class="company-phone">Тел: +7(495)495-95-95</a>
+      <div class="top-footer-wrapper">
+        <a class="footer-logo" href="index.html">
+          <img src="img/device-yellow-logo.png"  width="163" height="36" alt="Логотип компании DEVICE">
+        </a>
+        <ul class="footer-user-navigation">
+          <li>
+            <a href="#">Войти</a>
+          </li>
+          <li>
+            <a href="#">Сравнить</a>
+          </li>
+          <li>
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
+      </div>
+      <div class="middle-footer-wrapper">
+        <address class="our-address">г.Москва, ул.Строителей, 15</address>
+        <ul class="footer-navigation">
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Гарантия</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <a href="tel:+74954959595" class="company-phone">Тел: +7(495)495-95-95</a>
+      </div>
+      <div class="bottom-foooter-wrapper">
        <ul class="social-list">
         <li>
           <a class="social-button" href="https://facebook.com/">
@@ -288,10 +297,11 @@
             <span class="visually-hidden">Твиттер</span>
           </a>
         </li>
-      </ul>
-      <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/icons/htmlacademy-logo.svg" width="27" height="34" alt="HTML Academy">
-      </a>
+        </ul>
+        <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/icons/htmlacademy-logo.svg" width="27" height="34" alt="HTML Academy">
+        </a>
+      </div>
     </footer>
   </body>
 </html>
