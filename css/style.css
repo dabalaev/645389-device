@@ -661,6 +661,27 @@ body {
 	outline: blue solid 1px;
 }
 
+.user-navigation li:nth-child(1) {
+	width: 200px;
+	margin-right: 340px;
+}
+
+.user-navigation li:nth-child(2) {
+	width: 260px;
+	margin-right: 20px;
+}
+
+.user-navigation li:nth-child(3) {
+	width: 100px;
+	margin-right: 20px;
+	text-align: right;
+}
+
+.user-navigation li:nth-child(4) {
+	width: 100px;
+	text-align: right;
+}
+
 .site-navigation {
 	display: flex;
 	width: 1040px;
@@ -671,14 +692,51 @@ body {
 	outline: yellow solid 1px;
 }
 
+.site-navigation li:nth-child(1) {
+	width: 300px;
+	margin-right: 240px;
+}
+
+.site-navigation li:nth-child(2) {
+	width: 160px; 
+}
+
+.site-navigation li:nth-child(3) {
+	width: 120px;
+	margin-right: 100px;
+}
+
+.site-navigation li:nth-child(4) {
+	width: 120px
+}
+
 .sub-navigation {
 	display: flex;
-	width: 570px;
+	width: 600px;
 	margin-top: 10px;
 	padding: 0;
 	/*margin-left: -40px;*/
 
 	outline: black solid 1px;
+}
+
+.sub-navigation-list {
+	padding: 0;
+	margin: 0;
+}
+
+.sub-navigation ul:nth-child(1) {
+	width: 200px;
+	margin-right: 40px;
+}
+
+.sub-navigation ul:nth-child(2) {
+	width: 160px;
+	margin-right: 40px;
+}
+
+.sub-navigation ul:nth-child(3) {
+	width: 160px;
 }
 
 .promo-slider-list {
@@ -795,8 +853,8 @@ body {
 }
 
 .about-us {
-	width: 500px;
-	margin-right: 100px;
+	width: 480px;
+	margin-right: 120px;
 
 	outline: red solid 1px;
 }
@@ -809,13 +867,95 @@ body {
 
 .main-footer {
 	display: flex;
-
+	flex-direction: column;
+	
 	outline: green solid 1px;
+}
+
+.top-footer-wrapper {
+	display: flex;
+	width: 1160px;
+	margin-left: 20px;
+
+	outline: violet solid 1px;
+}
+
+.footer-logo {
+	width: 163px;
+	height: 35px;
+	margin-right: 637px; 
+
+	outline: red solid 1px;
 }
 
 .footer-user-navigation {
 	display: flex;
+	width: 360px;
 	padding: 0;
+	margin: 0;
+	justify-content: space-between;
+	
+	outline: yellow solid 1px;
+}
+
+.middle-footer-wrapper {
+	display: flex;
+	width: 1160px;
+	margin-left: 20px;
 
 	outline: blue solid 1px;
+}
+
+.our-address {
+	width: 260px;
+	margin-right: 100px;
+
+	outline: white solid 1px;
+}
+
+.footer-navigation {
+	display: flex;
+	width: 440px;
+	padding: 0;
+	margin: 0;
+	padding-left: 7px;
+	padding-right: 7px; 
+	margin-right: 180px;
+	justify-content: space-between;
+	
+	outline: red solid 1px;
+}
+
+.company-phone {
+	width: 180px;
+	text-align: right;
+
+	outline: white solid 1px;
+}
+
+.bottom-foooter-wrapper {
+	display: flex;
+	width: 1160px;
+	margin-left: 20px;
+	justify-content: flex-end;
+
+	outline: yellow solid 1px;
+}
+
+.social-list {
+	width: 160px;
+	padding: 0;
+	margin: 0;
+
+	outline: red solid 1px;
+}
+
+.academy-logo {
+	width: 27px;
+	height: 34px;
+	padding: 0;
+	margin: 0;
+	margin-left: 523px;
+
+	outline: green solid 1px;
 }
