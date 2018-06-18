@@ -307,7 +307,7 @@ a {
 
 .page-title {
 	font-family: "Gilroy", "Arial", sans-serif;
-	font-weight: 800;
+	font-weight: 700;
 	font-size: 47px;
 	line-height: 48px;
 	letter-spacing: 0.01em;
@@ -630,6 +630,11 @@ body {
 	min-height: 1800px;
 }
 
+.central-wrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+
 .main-header {
 	display: flex;
 	flex-direction: column;
@@ -646,7 +651,7 @@ body {
 	height: 36px;
 	margin-left: -880px;
 	margin-top: -20px;
-	margin-bottom: 35px; 
+	margin-bottom: 26px; 
 
 	outline: red solid 1px;
 }
@@ -669,13 +674,13 @@ body {
 .user-navigation li:nth-child(2) {
 	width: 260px;
 	margin-right: 20px;
-	padding-left: 26px;
+	padding-left: 42px;
 }
 
 .user-navigation li:nth-child(3) {
 	width: 100px;
 	margin-right: 20px;
-	padding-right: 4px;
+	padding-right: 13px;
 	text-align: right;
 }
 
@@ -689,7 +694,7 @@ body {
 	width: 1040px;
 	margin: 0px;
 	padding: 0px;
-	align-items: baseline;
+	/*align-items: baseline;*/
 
 	outline: yellow solid 1px;
 }
@@ -697,6 +702,7 @@ body {
 .site-navigation li:nth-child(1) {
 	width: 300px;
 	margin-right: 240px;
+	text-align: left;
 }
 
 .site-navigation li:nth-child(2) {
@@ -709,7 +715,8 @@ body {
 }
 
 .site-navigation li:nth-child(4) {
-	width: 120px
+	width: 120px;
+	text-align: right;
 }
 
 .sub-navigation {
@@ -821,6 +828,17 @@ body {
 	padding: 0;
 	margin: 0;
 	outline: red solid 1px;
+}
+
+.services-slider-item h3 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 32px;
+}
+	
+.services-slider-item p {
+	margin: 0;
+	padding: 0;
 }
 
 .brands {
@@ -980,7 +998,7 @@ body {
 
 .title-wrapper h1 {
 	margin: 0;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 }
 
 .breadcrumbs {
@@ -1157,4 +1175,18 @@ body {
 	margin-left: 160px;
 	padding-right: 30px;
 	text-align: right;
+}
+
+.write-to-us {
+	width: 960px;
+	height: 554px;
+	margin-left: 120px;
+
+	outline: green solid 1px;
+}
+
+.popup-map {
+	width: 960px;
+	height: 560px;
+	margin-left: 120px;
 }
