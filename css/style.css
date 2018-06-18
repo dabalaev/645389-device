@@ -53,14 +53,14 @@ a {
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+ 	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 .main-header {
@@ -625,11 +625,6 @@ a {
 
 /*Сетка*/
 
-body {
-	min-width: 1200px;
-	min-height: 1800px;
-}
-
 .central-wrapper {
 	width: 1200px;
 	margin: 0 auto;
@@ -639,6 +634,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	width: 1160px;
+	height: 299px;
 	margin-top: 40px;
 	margin-left: 20px;
 	align-items: center;
@@ -786,6 +782,7 @@ body {
 	display: flex;
 	width: 1160px;
 	margin-left: 20px;
+	margin-bottom: 180px;
 	padding: 0;
 
 
@@ -805,11 +802,16 @@ body {
 	outline: red solid 1px;
 }
 
+.categories-link p {
+	padding: 0;
+	margin: 0;
+}
+
 .services-wrapper {
 	display: flex;
 	width: 1160px;
-
 	margin-left: 20px;
+	margin-bottom: 95px;
 
 	outline: green solid 1px;
 }
@@ -845,6 +847,7 @@ body {
 	display: flex;
 	width: 1160px;
 	margin-left: 20px;
+	margin-bottom: 145px;
 
 	outline: green solid 1px;
 }
@@ -867,22 +870,54 @@ body {
 .company-info {
 	display: flex;
 	width: 1160px;
-	margin-left: 20px; 
+	margin-left: 20px;
+	margin-bottom: 90px; 
 
 	outline: green solid 1px;
 }
 
 .about-us {
-	width: 480px;
-	margin-right: 120px;
+	width: 485px;
+	margin-right: 115px;
 
 	outline: red solid 1px;
+}
+
+.about-us h3 {
+	margin: 0;
+	margin-bottom: 43px;
+}
+
+.about-us p {
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+.about-us-list {
+	padding: 0;
+	margin-top: 65px; 
+	margin-left: 35px;
+	margin-bottom: 58px;
 }
 
 .our-contacts {
 	width: 560px;
 
 	outline: blue solid 1px;
+}
+
+.our-contacts h3 {
+	margin: 0;
+	margin-bottom: 43px;
+}
+
+.our-contacts p {
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+.our-contacts-item img {
+	margin-bottom: 62px;
 }
 
 .main-footer {
@@ -898,7 +933,7 @@ body {
 	display: flex;
 	width: 1160px;
 	margin-left: 20px;
-	margin-top: 44px;
+	margin-top: 64px;
 
 	outline: violet solid 1px;
 }
@@ -916,6 +951,7 @@ body {
 	width: 360px;
 	padding: 0;
 	margin: 0;
+	padding-top: -5px;
 	justify-content: space-between;
 	
 	outline: yellow solid 1px;
@@ -992,6 +1028,8 @@ body {
 	margin: 0;
 	padding: 0;
 	margin-left: 80px;
+	margin-top: 38px;
+	margin-bottom: 46px;
 
 	outline: green solid 1px;
 }
@@ -1010,7 +1048,7 @@ body {
 }
 
 .breadcrumbs li {
-	margin-right: 40px;
+	margin-right: 38px;
 }
 
 .main-wrapper {
@@ -1032,7 +1070,9 @@ body {
 .filter-title-wrapper {
 	width: 348px;
 	height: 70px;
+	margin-bottom: 4px;
 	background-color: #dbdbdb;
+
 }
 
 .filter-title {
@@ -1117,7 +1157,7 @@ body {
 .catalog-item {
 	width: 360px;
 	margin-right: 40px;
-	margin-bottom: 70px;
+	margin-bottom: 47px;
 }
 
 .catalog-list li:nth-child(2n) {
@@ -1153,6 +1193,7 @@ body {
 	height: 70px;
 	margin: 0;
 	padding: 0;
+	margin-top: -10px;
 	margin-left: 72px;
 	margin-bottom: 77px;
 }
