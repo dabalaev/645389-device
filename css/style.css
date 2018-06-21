@@ -80,12 +80,12 @@ a {
 	align-items: center;
 	
 	width: 1160px;
-	height: 299px;
+	min-height: 299px;
 	margin-top: 40px;
 	margin-left: 20px;
 	
 	background-color: #f7e296;
-	outline: 1px solid green;
+	/*outline: 1px solid green;*/
 }
 
 .main-header-logo {
@@ -358,6 +358,7 @@ a {
 
 .promo-slider-list {
 	padding: 0;
+	margin-bottom: 107px;
 
 	list-style: none;
 }
@@ -367,6 +368,7 @@ a {
 	
 	width: 1160px;
 	margin-left: 20px;
+	margin-top: -127px;
 
 	outline: 1px solid green;
 }
@@ -385,21 +387,42 @@ a {
 }
 
 .slide-info-wrapper {
+	position: relative;
 	width: 500px;
 	
 	outline: 1px solid blue;
 }
 
 .promo-slider-number {
+	position: absolute;
+	top: -14px;
+	right: -13px;
+
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
 	font-size: 179.2px;
 	line-height: 179.2px;
 	letter-spacing: 0.01em;
-	/*color: white;*/
+	color: #ffffff;
+}
+
+.promo-slider-number::before {
+	content: "";
+
+	position: absolute;
+	top: 51px;
+	left: -328px;	
+
+	width: 100px;
+	height: 7px;
+
+	background-color: #ffffff;
 }
 
 .promo-slider-title {
+	margin-top: 79px;
+	margin-bottom: 19px;
+
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
 	font-size: 47px;
@@ -408,7 +431,12 @@ a {
 	color: black;
 }
 
+.button-slider {
+	margin-top: 20px;
+}
+
 .promo-slider-table {
+	margin-top: 86px;
 	font-size: 13px;
 	line-height: 20px;
 	letter-spacing: 0.01em;
@@ -421,6 +449,12 @@ a {
 	font-size: 36px;
 	line-height: 48px;
 	letter-spacing: 0.01em;
+}
+
+.promo-slider-table-value td {
+	padding: 0;
+	padding-right: 72px;
+	padding-bottom: 4px;
 }
 
 /* categories */
@@ -544,20 +578,94 @@ a {
 	padding: 0;
 	margin: 0;
 	margin-right: 100px;
+	margin-top: -27px;
 
 	list-style: none;
 
 	outline: 1px solid blue;
 }
 
+.button-services {
+	width: 160px;
+}
+
+.button-services:active {
+	color: #f7e184;
+	background-color: #000000;
+}
+
+.services-name li {
+	height: 40px;
+}
+
+.services-name li:nth-child(1) {
+	margin-top: 10px;
+}
+
+.services-name li:nth-child(2) {
+	margin-top: 25px;
+}
+
+.services-name li:nth-child(3) {
+	margin-top: 25px;
+}
+
 .services-slider {
 	width: 760px;
 	padding: 0;
 	margin: 0;
+	margin-top: -27px;
 	
 	list-style: none;
 
 	outline: 1px solid red;
+}
+
+.services-slider-item {
+	position: relative;
+
+	min-height: 289px;
+
+	outline: 1px solid blue;
+}
+
+.services-slider-delivery::after {
+	content: "";
+	
+	position: absolute;
+	top: 12px;
+	right: 67px;
+
+	width: 136px;
+	height: 164px;
+
+	background-image: url("../img/icons/delivery.svg");
+}
+
+.services-slider-warranty::after {
+	content: "";
+
+	position: absolute;
+	top: 12px;
+	right: 67px;
+
+	width: 171px;
+	height: 195px;
+
+	background-image: url("../img/icons/warranty.svg");
+}
+
+.services-slider-credit::after {
+	content: "";
+
+	position: absolute;
+	top: 12px;
+	right: 67px;
+
+	width: 156px;
+	height: 188px;
+
+	background-image: url("../img/icons/credit.svg");
 }
 
 .services-slider-item h3 {
@@ -641,6 +749,8 @@ a {
 }
 
 .about-us {
+	position: relative;
+
 	width: 485px;
 	margin-right: 115px;
 
@@ -652,12 +762,27 @@ a {
 	margin-bottom: 43px;
 }
 
+.about-us h3::after {
+	content: "";
+
+	position: absolute;
+	top: -53px;
+	left: 1px;
+
+	width: 80px;
+	height: 7px;
+
+	background-color: #000000; 
+}
+
 .about-us p {
 	margin: 0;
 	margin-bottom: 30px;
 }
 
 .about-us-list {
+	position: relative;
+
 	padding: 0;
 	margin-top: 65px; 
 	margin-left: 35px;
@@ -672,7 +797,37 @@ a {
 	list-style: none;
 }
 
+.about-us-list li::before {
+	content: "";
+
+	position: absolute;
+
+	width: 18px;
+	height: 18px;
+
+	opacity: 0.1;
+
+	background-image: url("../img/icons/delivery-button.svg");
+}
+
+.about-us-list li:nth-child(1)::before {
+	top: 11px;	
+	left: -38px;
+}
+
+.about-us-list li:nth-child(2)::before {
+	top: 51px;	
+	left: -38px;
+}
+
+.about-us-list li:nth-child(3)::before {
+	top: 91px;	
+	left: -38px;
+}
+
 .our-contacts {
+	position: relative;
+
 	width: 560px;
 
 	outline: 1px solid blue;
@@ -683,6 +838,19 @@ a {
 	margin-bottom: 43px;
 }
 
+.our-contacts h3::after {
+	content: "";
+
+	position: absolute;
+	top: -53px;
+	left: 1px;
+
+	width: 80px;
+	height: 7px;
+
+	background-color: #000000; 
+}
+
 .our-contacts p {
 	margin: 0;
 	margin-bottom: 40px;
@@ -690,6 +858,10 @@ a {
 
 .our-contacts-item img {
 	margin-bottom: 62px;
+}
+
+.button-company-info {
+	width: 260px;
 }
 
 /* ====== PAGE-FOOTER ====== */
@@ -844,6 +1016,10 @@ a {
 
 /* page-title */
 
+.inner-page .main-header {
+	min-height: 186px;
+}
+
 .title-wrapper {
 	display: flex;
 	flex-direction: column;
@@ -852,8 +1028,8 @@ a {
 	margin: 0;
 	padding: 0;
 	margin-left: 80px;
-	margin-top: 38px;
-	margin-bottom: 46px;
+	margin-top: 37px;
+	margin-bottom: 45px;
 
 	outline: 1px solid green;
 }
@@ -875,6 +1051,7 @@ a {
 .breadcrumbs {
 	display: flex;
 	
+	position: relative;
 	margin: 0;
 	padding: 0;
 	
@@ -882,7 +1059,7 @@ a {
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 24px;
-	letter-spacing: 0.01;
+	letter-spacing: 0.01em;
 	color: rgba(0, 0, 0, 0.3);
 
 	list-style: none;
@@ -891,7 +1068,33 @@ a {
 }
 
 .breadcrumbs li {
-	margin-right: 38px;
+	margin-right: 37px;
+}
+
+.breadcrumbs li:nth-child(1)::after {
+	content: "";
+
+	position: absolute;
+	top: 8px;
+	left: 68px;
+
+	width: 4px;
+	height: 7px;
+
+	background-image: url("../img/icons/nav-arrow.svg"); 
+}
+
+.breadcrumbs li:nth-child(2)::after {
+	content: "";
+
+	position: absolute;
+	top: 8px;
+	left: 219px;
+
+	width: 4px;
+	height: 7px;
+
+	background-image: url("../img/icons/nav-arrow.svg"); 
 }
 
 .breadcrumbs a {
@@ -939,7 +1142,7 @@ a {
 	margin: 0;
 	padding: 0;
 	margin-left: 80px;
-	padding-top: 25px;
+	padding-top: 23px;
 
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
@@ -1003,7 +1206,7 @@ a {
 	padding: 0;
 	margin-left: 72px;
 	margin-right: 40px;
-	padding-top: 25px; 
+	padding-top: 23px; 
 
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
@@ -1019,7 +1222,7 @@ a {
 	
 	margin: 0;
 	padding: 0;
-	padding-top: 20px;
+	padding-top: 18px;
 
 	list-style: none;
 }
@@ -1039,6 +1242,7 @@ a {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
+	letter-spacing: 0;
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1065,10 +1269,18 @@ a {
 }
 
 .sorting-priority li:nth-child(1) {
-	margin-right: 15px;
+	margin-top: 2px;	
+	margin-right: 12px;
+	margin-left: -4px;
+}
+
+.sorting-priority li:nth-child(2) {
+	margin-top: -1px;	
 }
 
 .sorting-priority-item {
+	font-size: 20px;
+
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1102,6 +1314,7 @@ a {
 	width: 360px;
 	margin-right: 40px;
 	margin-bottom: 47px;
+	margin-top: -1px;
 }
 
 .catalog-list li:nth-child(2n) {
@@ -1111,7 +1324,7 @@ a {
 .catalog-item-image {
 	width: 360px;
 	height: 380px;
-	margin-bottom: 30px;
+	margin-bottom: 32px;
 }
 
 .catalog-item-info {
@@ -1135,12 +1348,13 @@ a {
 	width: 100px;
 	margin: 0;
 	padding: 0;
+	padding-top: 1px;
 	
 	font-family: "Gilroy", "Arial", sans-serif; 
 	font-weight: 300;
 	font-size: 16px;
 	line-height: 24px;
-	letter-spacing: 0.01;
+	letter-spacing: 0.01em;
 
 	text-align: end;
 }
@@ -1182,9 +1396,9 @@ a {
 	height: 70px;
 	margin: 0;
 	padding: 0;
-	margin-top: -10px;
+	margin-top: -12px;
 	margin-left: 72px;
-	margin-bottom: 77px;
+	margin-bottom: 74px;
 
 	list-style: none;
 
@@ -1192,8 +1406,8 @@ a {
 }
 
 .pagination-item {
-	width: 40px;
-	margin-top: 20px;
+	width: 43px;
+	margin-top: 21px;
 	
 	text-align: center;
 }
@@ -1209,7 +1423,7 @@ a {
 .pagination-next {
 	width: 160px;
 	margin-left: 160px;
-	padding-right: 30px;
+	padding-right: 26px;
 	
 	text-align: right;
 }
@@ -1340,11 +1554,6 @@ a {
 .button:active {
 	color: rgba(0, 0, 0, 0.3); 
 	background-color: #f0c52e;
-}
-
-.button-services:active {
-	color: #f7e184;
-	background-color: #000000;
 }
 
 .button-close {
