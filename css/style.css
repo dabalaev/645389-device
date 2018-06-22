@@ -963,6 +963,19 @@ a {
 
 	background-color: #464646;
 }
+
+.footer-wrapper::after {
+	content: "";
+
+	position: absolute;
+	bottom: 12px; 
+	left: 0px;
+
+	width: 80px;
+	height: 7px;
+
+	background-color: #ffc600;
+}
 /*.top-footer-wrapper {
 	display: flex;
 	
@@ -980,17 +993,12 @@ a {
 	margin-right: 497px; 
 }
 
-.footer-logo::before {
-	content: "";
+.footer-logo:hover {
+	opacity: 0.6;
+}
 
-	position: absolute;
-	bottom: 12px; 
-	left: 0px;
-
-	width: 80px;
-	height: 7px;
-
-	background-color: #ffc600;
+.footer-logo:active {
+	opacity: 0.3;
 }
 
 .footer-user-navigation {
@@ -1178,7 +1186,7 @@ a {
 	margin: 0;
 	padding: 0;
 	margin-left: 80px;
-	margin-top: 37px;
+	margin-top: 36px;
 	margin-bottom: 45px;
 }
 
@@ -1270,15 +1278,42 @@ a {
 
 .filters {
 	width: 348px;
+	position: relative;
+}
 
-	background-color: #efefef;
+.filters::before {
+	content: "";
+
+	position: absolute;
+	top: 0;
+	left: -120px;
+	z-index: -2;
+
+	width: 468px;
+	min-height: 1283px;
+
+	background-color: #eeeeee;
 }
 
 .filter-title-wrapper {
+	position: relative;
+
 	width: 348px;
 	height: 70px;
 	margin-bottom: 4px;
-	
+}
+
+.filter-title-wrapper::before {
+	content: "";
+
+	position: absolute;
+	top: 0;
+	left: -120px;
+	z-index: -1;
+
+	width: 468px;
+	height: 70px;
+
 	background-color: #dbdbdb;
 }
 
@@ -1303,9 +1338,97 @@ a {
 .filter-form {
 	width: 200px;
 	margin-left: 80px;
-	margin-top: 70px;
+	margin-top: 69px;
+}
 
-	background-color: #efefef;
+.filter-title-wrapper::before {
+	content: "";
+
+	position: absolute;
+	top: 0;
+	left: -120px;
+	z-index: -1;
+
+	width: 468px;
+	height: 70px;
+
+	background-color: #dbdbdb;
+}
+
+.filter-fieldset {
+	margin: 0;
+	padding: 0;
+
+	border: 0;
+}
+
+.filter-price-item {
+	width: 260px;
+}
+
+.range-controls {
+	position: relative;
+
+	width: 200px;
+	padding-top: 35px;
+}
+
+.range-controls .scale {
+	height: 2px;
+
+	background-color: #dbdbdb;
+}
+
+.range-controls .bar {
+	width: 60%;
+	height: 2px;
+
+	background: #91c92f;
+}
+
+.range-controls .toggle {
+	position: absolute;
+	top: 25px;
+
+	width: 4px;
+	height: 4px;
+	padding: 0;
+
+	border: 8px solid #ffffff;
+	background-color: #ababab;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.range-controls .toggle-min {
+	left: -6px;
+}
+
+.range-controls .toggle-max {
+	left: 107px;
+}
+
+.price-control {
+	margin-left: 0px;
+	margin-top: 9px;
+	margin-bottom: 34px;
+
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0;
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.price-control input {
+	width: 50px;
+	margin-left: 3px;
+	margin-right: 19px;
+	border: none;
+	background-color: #eeeeee;
+	color: rgba(0, 0, 0, 0.2);
 }
 
 .filter-list {
@@ -1316,12 +1439,17 @@ a {
 }
 
 .filter-legend {
+	width: 200px;
+	padding-top: 10px;
+
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: 0.01;
 	color: #000000;
+
+	border-top: 2px solid black; 
 }
 
 .filter-item label {
@@ -1338,10 +1466,24 @@ a {
 
 .sorting {
 	display: flex;
+
+	position: relative;
 	
 	width: 100%;
 	height: 70px;
 	margin-bottom: 70px; 
+}
+
+.sorting::before {
+	content: "";
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+
+	width: 972px;
+	height: 70px;
 
 	background-color: #ebebeb;
 }
@@ -1442,6 +1584,7 @@ a {
 
 .catalog {
 	width: 974px;
+	margin-bottom: 3px;
 }
 
 .catalog-list {
@@ -1457,6 +1600,7 @@ a {
 }
 
 .catalog-item {
+	position: relative;
 	width: 360px;
 	margin-right: 40px;
 	margin-bottom: 47px;
@@ -1505,7 +1649,34 @@ a {
 	text-align: end;
 }
 
+.catalog-item-hover {
+	display: none;
+	flex-direction: column;
+
+	position: absolute;
+	width: 360px;
+	height: 380px;
+
+	top: 0;
+	left: 0;
+
+	justify-content: center;
+	align-content: space-between;
+	align-items: center;
+}
+
+.catalog-item:hover .catalog-item-hover{
+	display: flex;
+}
+
+.catalog-item:hover .catalog-item-image{
+	opacity: 0.3;
+}
+
 .add-basket-link {
+	width: 200px;
+	margin-top: 58px;
+
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
 	font-size: 18px;
@@ -1514,6 +1685,8 @@ a {
 }
 
 .compare-link {
+	margin-top: 20px;
+
 	font-family: "Open Sans", "Arial", sans-serif; 
 	font-weight: 300;
 	font-size: 13px;
