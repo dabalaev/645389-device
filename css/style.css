@@ -72,6 +72,23 @@ a {
 	margin: 0 auto;
 }
 
+.button {
+	vertical-align: middle;
+
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	text-align: center;
+
+	color: #000000;
+	background-color: #f0c52e;
+
+	border: none;
+}
+
 /* ====== PAGE-HEADER ====== */
 
 .main-header {
@@ -129,7 +146,7 @@ a {
 	
 	width: 1040px;
 	margin: 0px;
-	margin-bottom: 40px;
+	margin-bottom: 29px;
 	padding: 0px;
 	
 	list-style: none;
@@ -147,12 +164,21 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.site-search {
+	width: 440px;
+	margin-left: 37px;
+}
+
 .site-search-item {
-	position: relative;
+	display: flex;
+
+	height: 49px;
+
+	margin-top: -9px;
 }
 
 .site-search-item input {
-	color: rgba(0, 0, 0, 0.3);
+	width: 318px;
 
 	background-color: #f7e296;
 	
@@ -160,11 +186,15 @@ a {
 	outline: none;
 }
 
+.site-search-item label {
+	position: relative;
+}
+
 .site-search-item label::before {
 	content: "";
 
 	position: absolute;
-	top: 8px;
+	top: 17px;
 	left: -34px;
 
 	width: 16px;
@@ -175,34 +205,80 @@ a {
 
 /*.site-search-item input:hover {
 	color: rgba(0, 0, 0, 0.6);
-	border: none;
-}
+}*/
 
 .site-search-item input:focus {
-	border-bottom: 2px, solid, #000000;
-	color: rgba(0, 0, 0, 1);
-} */
+	border-bottom: 2px solid #000000;
+} 
+
+.site-search-item input::placeholder {
+	font-family: "Open Sans", "Arial", sans-serif; 
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 30px;
+	letter-spacing: 0.01em;
+
+	opacity: 0.3;
+}
+
+.site-search-item input:hover::placeholder {
+	opacity: 0.6;
+}
+
+.site-search-item input:focus::placeholder {
+	opacity: 1;
+}
+
+.button-search {
+	display: none;
+
+	width: 85px;
+	height: 49px;
+
+	font-family: "Open Sans", "Arial", sans-serif; 
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 30px;
+	letter-spacing: 0.01em;
+
+	background: none;
+	border: 2px solid #000000;
+}
+
+.site-search-item:active .button-search {
+	display: block;
+}
+
+.button-search:hover {
+	color: rgba(255, 255, 255, 1);
+	background-color: black;
+}
+
+.button-search:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: black;
+}
 
 .user-navigation li {
 	position: relative;
 }
 
 .user-navigation li:nth-child(1) {
-	width: 200px;
-	margin-right: 340px;
-	padding-left: 37px;
+	width: 440px;
+	margin-right: 100px;
+	/*padding-left: 37px;*/
 }
 
 .user-navigation li:nth-child(2) {
 	width: 260px;
 	margin-right: 20px;
-	padding-left: 5px;
+	/*padding-left: 5px;*/
 }
 
 .user-navigation li:nth-child(3) {
 	width: 100px;
 	margin-right: 20px;
-	padding-right: 13px;
+	/*padding-right: 17px;*/
 	
 	text-align: right;
 }
@@ -213,12 +289,18 @@ a {
 	text-align: right;
 }
 
+.user-navigation-input {
+	position: relative;
+
+	margin-left: 26px;
+}
+
 .user-navigation-input::before {
 	content: "";
 
 	position: absolute;
-	top: 9px;
-	left: -20px;	
+	top: 4px;
+	left: -26px;	
 
 	width: 13px;
 	height: 12px;
@@ -234,12 +316,18 @@ a {
 	opacity: 0.3;
 }
 
+.user-navigation-compare {
+	position: relative;
+
+	margin-right: 4px;
+}
+
 .user-navigation-compare::before {
 	content: "";
 
 	position: absolute;
-	top: 11px;
-	left: 3px;	
+	top: 6px;
+	left: -20px;
 
 	width: 10px;
 	height: 10px;
@@ -255,12 +343,16 @@ a {
 	opacity: 0.3;
 }
 
+.user-navigation-cart {
+	position: relative;
+}
+
 .user-navigation-cart::before {
 	content: "";
 
 	position: absolute;
-	top: 9px;
-	left: 9px;	
+	top: 4px;
+	left: -23px;	
 
 	width: 12px;
 	height: 12px;
@@ -288,8 +380,9 @@ a {
 
 .site-navigation li:nth-child(1) {
 	width: 300px;
-	margin-right: 240px;
-	
+	margin-right: 243px;
+	margin-left: -1px;
+
 	text-align: left;
 }
 
@@ -299,12 +392,13 @@ a {
 
 .site-navigation li:nth-child(3) {
 	width: 120px;
-	margin-right: 100px;
+	margin-right: 104px;
 }
 
 .site-navigation li:nth-child(4) {
 	width: 120px;
-	
+	margin-right: -1px; 
+
 	text-align: right;
 }
 
@@ -323,8 +417,8 @@ a {
 	content: "";
 
 	position: absolute;
-	top: 3px;
-	right: 54px;	
+	top: 4px;
+	right: 50px;	
 
 	width: 16px;
 	height: 16px;
@@ -336,7 +430,9 @@ a {
 
 .sub-navigation {
 	display: none;
-	
+
+	position: absolute;
+
 	width: 1100px;
 	height: 153px;
 	margin-top: 10px;
@@ -1845,23 +1941,6 @@ a {
 .write-to-us-item input::placeholder,
 .write-to-us-item textarea::placeholder {
 	color: rgba(70, 70, 70, 0.4);
-}
-
-.button {
-	vertical-align: middle;
-
-	font-family: "Gilroy", "Arial", sans-serif;
-	font-weight: 800;
-	font-size: 18px;
-	line-height: 24px;
-	letter-spacing: 0.2em;
-	text-transform: uppercase;
-	text-align: center;
-
-	color: #000000;
-	background-color: #f0c52e;
-
-	border: none;
 }
 
 .button:hover {
