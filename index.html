@@ -17,7 +17,7 @@
             <form class="site-search" action="https://echo.htmlacademy.ru" method="post">
               <div class="site-search-item">
                 <label for="search" ><span class="visually-hidden">Поиск по сайту</span></label>
-                <input id="search" type="search" name="search" placeholder="Поиск по сайту">
+                <input id="search" type="text" name="search" placeholder="Поиск по сайту">
                 <button class="button-search" type="submit">Найти</button>
               </div>
             </form>
@@ -81,20 +81,14 @@
       <h1 class="visually-hidden">Магазин DEVICE</h1>
       <section class="promo-slider">
         <h2 class="visually-hidden">Слайдер</h2>
-        <ul class="slider-control visually-hidden">
-          <li>
-            <label class="visually-hidden">Перейти на первый слайд</label>
-            <input type="radio" name="slide-number" value="1">
-          </li>
-          <li>
-            <label class="visually-hidden">Перейти на второй слайд</label>
-            <input type="radio" name="slide-number" value="2">
-          </li>
-          <li>
-            <label class="visually-hidden">Перейти на третий слайд</label>
-            <input type="radio" name="slide-number" value="3">
-          </li>
-        </ul>
+        <input class="visually-hidden" type="radio" id="slide-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="slide-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="slide-3" name="toggle">
+        <div class="slider-controls">
+          <label class="slider-controls slider-controls-item-1" for="slide-1">Первый слайд</label>
+          <label class="slider-controls slider-controls-item-2" for="slide-2">Второй слайд</label>
+          <label class="slider-controls slider-controls-item-3" for="slide-3">Третий слайд</label>
+        </div>
         <ul class="promo-slider-list">
           <li class="promo-slider-item">
             <div class="slide-image-wrapper">
@@ -119,7 +113,7 @@
               </table>
             </div>
           </li>
-          <li class="promo-slider-item visually-hidden">
+          <li class="promo-slider-item">
             <div class="slide-image-wrapper">
               <img src="img/slider-bracer.png" width="345" height="485" alt="Фитнес-браслет" >
             </div>
@@ -127,7 +121,7 @@
               <span class="promo-slider-number">02</span>
               <p class="promo-slider-title">Худеем<br>правильно!</p>
               <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету</p>
-              <a href="#" class="button">Подробнее</a>
+              <a href="#" class="button button-slider">Подробнее</a>
               <table class="promo-slider-table">
                 <tr class="promo-slider-table-value">
                   <td>48 часов</td>
@@ -138,7 +132,7 @@
               </table>
             </div>
           </li>
-          <li class="promo-slider-item visually-hidden">
+          <li class="promo-slider-item">
             <div class="slide-image-wrapper">
               <img src="img/slider-quadcopter.png" width="526" height="334" alt="Квадрокоптер">
             </div>
@@ -146,7 +140,7 @@
               <span class="promo-slider-number">03</span>
               <p class="promo-slider-title">Порхает как бабочка, жалит как пчела!</p>
               <p>Этот обычный на первый взгляд квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-              <a href="#" class="button">Подробнее</a>
+              <a href="#" class="button button-slider">Подробнее</a>
               <table class="promo-slider-table">
                 <tr class="promo-slider-table-value">
                   <td>800 м</td>
