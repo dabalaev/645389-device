@@ -299,31 +299,34 @@
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
         <div class="services-wrapper">
-        <ul class="services-name">
-          <li>
-            <button class="button button-services">Доставка</button>	
-          </li>
-          <li>
-            <button class="button button-services">Гарантия</button>
-          </li>
-          <li>
-            <button class="button button-services">Кредит</button>
-          </li>
-        </ul>
-        <ul class="services-slider">
-          <li class="services-slider-item">
-            <h3>Доставка</h3>
-            <p class="services-slider-delivery">Мы с удовольствием доставим ваш товар прямо к вашему<br>подъезду совершенно бесплатно! Ведь мы не плохо<br> заработаем, поднимая его на ваш этаж.</p>
-          </li>
-          <li class="services-slider-item">
-            <h3>Гарантия</h3>
-            <p class="services-slider-warranty" >Если из-за возгорания купленного товара у вас сгорит<br>дом - не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
-          </li>
-          <li class="services-slider-item">
-            <h3>Кредит</h3>
-            <p class="services-slider-credit" >Залезть в долговую яму стало проще! Кредитные<br>консультанты подберут для вас наиболее выгодные<br>условия кредита. Выгодные для нашего банка, разумеется.</p>
-          </li>
-        </ul>
+          <input class="visually-hidden" type="radio" id="services-slide-1" name="toggle-slider" checked>
+          <input class="visually-hidden" type="radio" id="services-slide-2" name="toggle-slider">
+          <input class="visually-hidden" type="radio" id="services-slide-3" name="toggle-slider">
+          <ul class="services-slider-control">
+            <li>
+              <label class="button button-services button-services-1" for="services-slide-1" >Доставка</label>	
+            </li>
+            <li>
+              <label class="button button-services button-services-2" for="services-slide-2">Гарантия</label>
+            </li>
+            <li>
+              <label class="button button-services button-services-3" for="services-slide-3">Кредит</label>
+            </li>
+          </ul>
+          <ul class="services-slider-list">
+            <li class="services-slider-item">
+              <h3>Доставка</h3>
+              <p class="services-slider-delivery">Мы с удовольствием доставим ваш товар прямо к вашему<br>подъезду совершенно бесплатно! Ведь мы не плохо<br> заработаем, поднимая его на ваш этаж.</p>
+            </li>
+            <li class="services-slider-item">
+              <h3>Гарантия</h3>
+              <p class="services-slider-warranty" >Если из-за возгорания купленного товара у вас сгорит<br>дом - не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+            </li>
+            <li class="services-slider-item">
+              <h3>Кредит</h3>
+              <p class="services-slider-credit" >Залезть в долговую яму стало проще! Кредитные<br>консультанты подберут для вас наиболее выгодные<br>условия кредита. Выгодные для нашего банка, разумеется.</p>
+            </li>
+          </ul>
         </div>
       </section> <!-- end .services -->
 
@@ -331,23 +334,18 @@
         <h2 class="visually-hidden">Бренды</h2>	
         <ul class="brands-list">
           <li class="brand-name dji-logo">
-            <a class="brands-link" href="#">
-              <!-- <img src="img/dji-logo.png" width="260" height="100" alt="Логотип компании dji"> -->
-            </a>
+            <a class="brands-link" href="#"></a>
           </li>
           <li class="brand-name spgadjets-logo">
             <a class="brands-link" href="#">
-              <!-- <img src="img/spgadjets-logo.png" width="260" height="100" alt="Логотип компании spgadjets"> -->
             </a>
           </li>
           <li class="brand-name gopro-logo">
             <a class="brands-link" href="#">
-              <!-- <img src="img/gopro-logo.png" width="260" height="100" alt="Логотип компании gopro"> -->
             </a>
           </li>  
           <li class="brand-name vive-logo">
             <a class="brands-link" href="#">
-              <!-- <img src="img/vive-logo.png" width="260" height="100" alt="Логотип компании vive"> -->
             </a>
           </li>
         </ul>
@@ -377,76 +375,73 @@
       </section>
     </main>
    
-    <footer class="main-footer container">
-      <!-- <div class="top-footer-wrapper"> -->
-      <div class="footer-wrapper">
-        <a class="footer-logo">
-          <img src="img/device-yellow-logo.png"  width="163" height="36" alt="Логотип компании DEVICE">
-        </a>
-        <ul class="footer-user-navigation">
-          <li>
-            <a class="footer-user-link" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
-                <path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/>
-              </svg>
-              <span>Войти</span>
-            </a>
-          </li>
-          <li>
-            <a class="footer-user-link" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
-                <path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/>
-              </svg>
-              <span>Сравнить</span>
-            </a>
-          </li>
-          <li>
-            <a class="footer-user-link" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-                <path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/>
-                <path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/>
-              </svg>
-              <span>Корзина</span>
-            </a>
-          </li>
-        </ul>
-      <!-- </div> -->
-      <!-- <div class="middle-footer-wrapper"> -->
-        <address class="our-address">г. Москва, ул. Строителей, 15</address>
-        <ul class="footer-navigation">
-          <li>
-            <a href="#">Доставка</a>
-          </li>
-          <li>
-            <a href="#">Гарантия</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-        <a href="tel:+74954959595" class="company-phone">Тел.: +7 (495) 495-95-95</a>
-<!--       </div>
-      <div class="bottom-foooter-wrapper"> -->
-        <ul class="social-list">
-          <li>
-            <a class="social-button button-facebook" href="https://facebook.com/">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-          <li>
-            <a class="social-button button-instagram" href="https://instagram.com/">
-              <span class="visually-hidden">Инстаграмм</span>
-            </a>
-          </li>
-          <li>
-            <a class="social-button button-twitter" href="https://twitter.com/">
-              <span class="visually-hidden">Твиттер</span>
-            </a>
-          </li>
-        </ul>
-        <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/icons/htmlacademy-logo.svg" width="27" height="34" alt="HTML Academy">
-        </a>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <a class="footer-logo">
+            <img src="img/device-yellow-logo.png"  width="163" height="36" alt="Логотип компании DEVICE">
+          </a>
+          <ul class="footer-user-navigation">
+            <li>
+              <a class="footer-user-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
+                  <path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/>
+                </svg>
+                <span>Войти</span>
+              </a>
+            </li>
+            <li>
+              <a class="footer-user-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                  <path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/>
+                </svg>
+                <span>Сравнить</span>
+              </a>
+            </li>
+            <li>
+              <a class="footer-user-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                  <path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/>
+                  <path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/>
+                </svg>
+                <span>Корзина</span>
+              </a>
+            </li>
+          </ul>
+          <address class="our-address">г. Москва, ул. Строителей, 15</address>
+          <ul class="footer-navigation">
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">Гарантия</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <a href="tel:+74954959595" class="company-phone">Тел.: +7 (495) 495-95-95</a>
+          <ul class="social-list">
+            <li>
+              <a class="social-button button-facebook" href="https://facebook.com/">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li>
+              <a class="social-button button-instagram" href="https://instagram.com/">
+                <span class="visually-hidden">Инстаграмм</span>
+              </a>
+            </li>
+            <li>
+              <a class="social-button button-twitter" href="https://twitter.com/">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+          </ul>
+          <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/icons/htmlacademy-logo.svg" width="27" height="34" alt="HTML Academy">
+          </a>
+        </div>
       </div>
     </footer>
 
