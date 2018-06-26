@@ -2049,11 +2049,11 @@ a {
 	cursor: pointer;
 }
 
-.catalog-item-image:hover .catalog-item-hover {
+.catalog-item:hover .catalog-item-hover {
 	display: flex;
 }
 
-.catalog-item-image:hover .catalog-item-image {
+.catalog-item:hover .catalog-item-image {
 	opacity: 0.3;
 }
 
