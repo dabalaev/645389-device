@@ -17,12 +17,14 @@
             <form class="site-search" action="https://echo.htmlacademy.ru" method="post">
               <div class="site-search-item">
                 <label for="search" ><span class="visually-hidden">Поиск по сайту</span></label>
-                <input id="search" type="text" name="search" placeholder="Поиск по сайту">
+                <input id="search" class="site-search-form" type="text" name="search" placeholder="Поиск по сайту">
+                <button class="button-search" type="submit">Найти</button>
               </div>
             </form>
           </li>
           <li>
-            <a class="user-navigation-input" href="#">Войти</a>
+            <a class="user-navigation-input" href="#">Валентин Петухов</a>
+            <a class="user-navigation-output" href="#">Выйти</a>
           </li>
           <li>
             <a class="user-navigation-compare" href="#">Сравнить</a>
@@ -33,7 +35,7 @@
         </ul>
         <nav class="main-navigation">
           <ul class="site-navigation">
-            <li class="site-nav-item">
+            <li class="site-nav-item site-sub-navigation">
               <a class="header-catalog" href="#">Каталог товаров<span class="visually-hidden">+</span></a>
               <div class="sub-navigation">
                 <ul class="sub-navigation-list">
@@ -223,7 +225,7 @@
             </div>
             <div class="catalog-item-info">  
               <a href="#">
-                <h3 class="catalog-item-title">Профессиональная<br>селфи-палка</h3>
+                <h3 class="catalog-item-title">Профессиональная селфи-палка</h3>
               </a>
               <p class="catalog-item-price">1 500 руб.</p>
             </div>  
@@ -247,7 +249,7 @@
               <a class="compare-link" href="#">Добавить к сравнению</a>
             </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item catalog-item-new">
             <div class="catalog-item-image">
               <img src="img/selfie/selfie-followme.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной">
             </div>
@@ -296,8 +298,9 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
                   <path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/>
                 </svg>
-                <span>Войти</span>
+                <span>Валентин Петухов</span>
               </a>
+              <a class="user-navigation-output" href="">Выйти</a>
             </li>
             <li>
               <a class="footer-user-link" href="#">
