@@ -123,12 +123,18 @@ a {
 }
 
 .main-navigation {
+	margin-bottom: 120px;
+
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 24px;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
+}
+
+.inner-page .main-navigation {
+	margin-bottom: 0;
 }
 
 .main-navigation a {
@@ -379,7 +385,6 @@ a {
 	width: 1040px;
 	margin: 0px;
 	padding: 0px;
-	margin-bottom: 120px;
 	
 	list-style: none;
 }
@@ -627,8 +632,12 @@ a {
 	z-index: 1;
 
 	display: block;
+	vertical-align: middle;
+	text-align: center;
 	width: 220px;
+	min-height: 50px;
 	margin-top: 51px;
+	padding-top:  
 }
 
 .button-slider:active {
@@ -638,23 +647,23 @@ a {
 .button-slider::before {
 	content: "";
 	position: absolute;
-	top: 8px;
+	top: 40%;
 	left: 0;
 	z-index: -1;
 
-	width: 220px;
-	height: 8px;
+	width: 100%;
+	height: 20%;
 
 	background-color: #f0c52e;
 }
 
 .button-slider:hover::before {
-	top: -8px;
+	top: 0;
 	left: 0;
 	z-index: -1;
 
-	width: 220px;
-	height: 40px;
+	width: 100%;
+	height: 100%;
 
 	background-color: #f0c52e;
 }
@@ -1040,6 +1049,8 @@ a {
 .brand-name {
 	width: 260px;
 	height: 100px;
+
+	cursor: pointer;
 }
 
 .dji-logo {
@@ -1962,24 +1973,6 @@ a {
 	margin-top: -1px;
 }
 
-/*.catalog-item-new {
-	position: relative;
-}
-
-.catalog-item-new::before {
-	content: "";
-	position: absolute;
-	top: 29px;
-	right: 27px;
-	z-index: 3;
-
-	width: 60px;
-	height: 60px;	
-
-	background-image: url("../img/icons/new-item.svg");
-	opacity: 0.1;
-}*/
-
 .catalog-list li:nth-child(2n) {
 	margin-right: 0;
 }
@@ -1992,6 +1985,30 @@ a {
 
 .catalog-item-info {
 	display: flex;
+}
+
+.catalog-new-item:before {
+	content: "NEW";
+	position: absolute;
+	top: 29px;
+	right: 26px;
+
+	display: flex;
+	width: 56px;
+	height: 56px;
+	z-index: 3;
+	align-items: center;
+	justify-content: center;
+
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.05em;
+	color: rgba(0, 0, 0, 0.2);
+
+	border: 2px solid rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
 }
 
 .catalog-item-title {
@@ -2375,7 +2392,7 @@ a {
 	left: 50%;
 	z-index: 5;
 
-	/*display: none;*/
+	display: none;
 	width: 959px;
 	height: 560px;
 	margin-left: -480px;
