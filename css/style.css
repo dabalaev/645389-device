@@ -1728,6 +1728,7 @@ a {
 	letter-spacing: 0.01em;
 	color: #000000;
 }
+
 .filter-item {
 	position: relative;
 }
@@ -1738,6 +1739,12 @@ a {
 
 .filter-item:active {
 	opacity: 1;
+}
+
+.filter-item-input:disabled,
+.filter-item-input:disabled + label,
+.filter-item-input:disabled ~ span {
+	pointer-events: none;
 }
 
 .filter-item-input:disabled ~ .checkbox-color,
@@ -1751,33 +1758,32 @@ a {
 }
 
 .checkbox-color {
-	padding-left: 39px;
+	padding: 5px 0 5px 39px;
 
 	cursor: pointer;
 }
 
 input[type="checkbox"] ~ .checkbox-indicator,
 input[type="checkbox"] ~ .checkbox-color {
-	position: absolute;
-	top: 7px;
-	left: -2px;
+	position: relative;
 
 	width: 23px;
 	height: 23px;
 
 	background-image: url("../img/icons/checkbox-off.svg");
+	background-repeat: no-repeat;
+	background-position: left center;
 }
 
 input[type="checkbox"]:checked ~ .checkbox-indicator,
-input[type="checkbox"] ~ .checkbox-color {
-	position: absolute;
-	top: 7px;
-	left: -2px;
-
+input[type="checkbox"]:checked ~ .checkbox-color {
+	position: relative;
 	width: 27px;
-	height: 23px;
+	height: 27px;
 
 	background-image: url("../img/icons/checkbox-on.svg");
+	background-repeat: no-repeat;
+	background-position: left center;
 }
 
 .radio-bluetooth {
