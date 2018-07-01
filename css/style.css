@@ -637,7 +637,6 @@ a {
 	width: 220px;
 	min-height: 50px;
 	margin-top: 51px;
-	padding-top:  
 }
 
 .button-slider:active {
@@ -1345,8 +1344,9 @@ a {
 .our-address {
 	position: relative;
 
-	width: 300px;
+	width: 260px;
 	margin-top: 29px;
+	margin-right: auto;
 
 	font-style: normal;
 }
@@ -1354,11 +1354,11 @@ a {
 .footer-navigation {
 	display: flex;
 	flex-wrap: wrap;
-	width: 432px;
+	max-width: 600px;
 	padding: 0;
 	margin: 0;
 	margin-top: 35px;
-	margin-left: 67px;
+	/*margin-left: 67px;*/
 
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
@@ -1370,11 +1370,11 @@ a {
 }
 
 .footer-navigation li {
-	margin-right: 34px;
+	margin-left: 34px;
 }
 
-.footer-navigation li:nth-child(3n) {
-	margin-right: 0;
+.footer-navigation li:first-child {
+	margin-left: 0;
 }
 
 .footer-navigation a:hover {
@@ -1386,7 +1386,7 @@ a {
 }
 
 .company-phone {
-	width: 300px;
+	width: 260px;
 	margin-top: 29px;
 	margin-left: auto;
 
@@ -1719,12 +1719,30 @@ a {
 }
 
 .filter-item label {
+	width: auto;
+
 	font-family: "Open Sans", "Arial", sans-serif; 
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 40px;
 	letter-spacing: 0.01em;
 	color: #000000;
+}
+.filter-item {
+	position: relative;
+}
+
+.filter-item:hover {
+	opacity: 0.6;
+}
+
+.filter-item:active {
+	opacity: 1;
+}
+
+.filter-item-input:disabled ~ .checkbox-color,
+.filter-item-input:disabled ~ .checkbox-indicator {
+	opacity: 0.25;
 }
 
 .filter-list {
@@ -1733,17 +1751,16 @@ a {
 }
 
 .checkbox-color {
-	position: relative;
-
 	padding-left: 39px;
 
 	cursor: pointer;
 }
 
-.checkbox-color input[type="checkbox"] + .checkbox-indicator {
+input[type="checkbox"] ~ .checkbox-indicator,
+input[type="checkbox"] ~ .checkbox-color {
 	position: absolute;
-	top: -3px;
-	left: 0;
+	top: 7px;
+	left: -2px;
 
 	width: 23px;
 	height: 23px;
@@ -1751,10 +1768,11 @@ a {
 	background-image: url("../img/icons/checkbox-off.svg");
 }
 
-.checkbox-color input[type="checkbox"]:checked + .checkbox-indicator {
+input[type="checkbox"]:checked ~ .checkbox-indicator,
+input[type="checkbox"] ~ .checkbox-color {
 	position: absolute;
-	top: -3px;
-	left: 0;
+	top: 7px;
+	left: -2px;
 
 	width: 27px;
 	height: 23px;
