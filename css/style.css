@@ -632,11 +632,9 @@ a {
 	z-index: 1;
 
 	display: block;
-	vertical-align: middle;
-	text-align: center;
 	width: 220px;
-	min-height: 50px;
-	margin-top: 51px;
+	margin-top: 43px;
+	padding: 8px 0;
 }
 
 .button-slider:active {
@@ -646,7 +644,7 @@ a {
 .button-slider::before {
 	content: "";
 	position: absolute;
-	top: 40%;
+	top: 50%;
 	left: 0;
 	z-index: -1;
 
@@ -654,21 +652,16 @@ a {
 	height: 20%;
 
 	background-color: #f0c52e;
+	transform: translate3d(0, -50%, 0);
 }
 
 .button-slider:hover::before {
-	top: 0;
-	left: 0;
-	z-index: -1;
-
-	width: 100%;
 	height: 100%;
 
-	background-color: #f0c52e;
 }
 
 .promo-slider-table {
-	margin-top: 56px;
+	margin-top: 48px;
 
 	font-size: 13px;
 	line-height: 20px;
@@ -748,6 +741,10 @@ a {
 	justify-content: center;
 }
 
+.categories-svg-container--to-bottom {
+	align-items: flex-end;
+}
+
 
 /*.categories-link-virtual {
 	margin-left: 31px;
@@ -788,7 +785,7 @@ a {
 .categories-link::before {
 	content: "";
 	position: absolute;
-	top: -1px;
+	top: 0;
 	left: 0;
 	z-index: -1;
 
@@ -862,7 +859,7 @@ a {
 	padding: 0;
 	margin: 0;
 	margin-right: 100px;
-	margin-top: -22px;
+	margin-top: -30px;
 
 	list-style: none;
 }
@@ -870,7 +867,7 @@ a {
 .services-slider-control::before {
 	content: "";
 	position: absolute;
-	top: -78px;
+	top: -70px;
 	right: 16px;
 
 	width: 7px;
@@ -885,35 +882,29 @@ a {
 
 	display: block;
 	width: 160px;
-	height: 40px;
+	padding: 8px 0;
 }
 
 .button-services::before {
 	content: "";
 	position: absolute;
-	top: 8px;
+	top: 50%;
 	left: 0;
 	z-index: -1;
 
 	width: 160px;
-	height: 8px;
+	height: 20%;
 
 	background-color: #f0c52e;
+	transform: translate3d(0, -50%, 0);
 }
 
 .button-services:hover::before {
-	top: -8px;
-	left: 0;
-	z-index: -1;
-
-	width: 160px;
-	height: 40px;
-
-	background-color: #f0c52e;
+	height: 100%;
 }
 
+
 .services-slider-control li {
-	height: 40px;
 	margin-bottom: 24px;
 }
 
@@ -960,12 +951,8 @@ a {
 #services-slide-1:checked ~ .services-slider-control .button-services-1::before,
 #services-slide-2:checked ~ .services-slider-control .button-services-2::before,
 #services-slide-3:checked ~ .services-slider-control .button-services-3::before {
-	top: -8px;
-	left: 0;
-	z-index: -1;
-
 	width: 278px;
-	height: 40px;
+	height: 100%;
 
 	background-color: #000000;
 }
@@ -1090,7 +1077,7 @@ a {
 	display: flex;
 	width: 1160px;
 	margin-left: 20px;
-	margin-bottom: 89px;
+	margin-bottom: 82px;
 }
 
 .company-info h3 {
@@ -1145,7 +1132,7 @@ a {
 	padding: 0;
 	margin-top: 66px; 
 	margin-left: 35px;
-	margin-bottom: 61px;
+	margin-bottom: 54px;
 
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
@@ -1201,7 +1188,7 @@ a {
 
 .our-contacts-item img {
 	margin-top: -1px;
-	margin-bottom: 67px;
+	margin-bottom: 60px;
 }
 
 .button-company-info {
@@ -1210,6 +1197,7 @@ a {
 
 	display: block;
 	width: 260px;
+	padding: 8px 0;
 }
 
 .button-company-info:active {
@@ -1219,23 +1207,19 @@ a {
 .button-company-info::before {
 	content: "";
 	position: absolute;
-	top: 9px;
+	top: 50%;
 	left: 0;
 	z-index: -1;
 
 	width: 260px;
-	height: 8px;
+	height: 20%;
 
 	background-color: #f0c52e;
+	transform: translate3d(0, -50%, 0);
 }
 
 .button-company-info:hover::before {
-	top: -7px;
-	left: 0;
-	z-index: -1;
-
-	width: 260px;
-	height: 40px;
+	height: 100%;
 
 	background-color: #f0c52e;
 }
@@ -1815,7 +1799,8 @@ a {
 
 	display: block;
 	width: 200px;
-	margin-top: 7px;
+	margin-top: 2px;
+	padding: 8px 0;
 }
 
 .button-filter:active {
@@ -1825,23 +1810,20 @@ a {
 .button-filter::before {
 	content: "";
 	position: absolute;
-	top: 9px;
+	top: 50%;
 	left: 0;
 	z-index: -1;
 
 	width: 200px;
-	height: 8px;
+	height: 20%;
 
 	background-color: #f0c52e;
+
+	transform: translate3d(0, -50%, 0);
 }
 
 .button-filter:hover::before {
-	top: -8px;
-	left: 0;
-	z-index: -1;
-
-	width: 200px;
-	height: 40px;
+	height: 100%;
 
 	background-color: #f0c52e;
 }
@@ -2342,7 +2324,7 @@ a {
 
 	display: block;
 	width: 200px;
-	margin-top: 7px;
+	padding: 8px 0;
 }
 
 .button-send:active {
@@ -2352,23 +2334,19 @@ a {
 .button-send::before {
 	content: "";
 	position: absolute;
-	top: 9px;
+	top: 50%;
 	left: 0;
 	z-index: -1;
 
 	width: 200px;
-	height: 8px;
+	height: 20%;
 
 	background-color: #f0c52e;
+	transform: translate3d(0, -50%, 0);
 }
 
 .button-send:hover::before {
-	top: -8px;
-	left: 0;
-	z-index: -1;
-
-	width: 200px;
-	height: 40px;
+	height: 100%;
 
 	background-color: #f0c52e;
 }
