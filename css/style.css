@@ -1733,11 +1733,13 @@ a {
 	position: relative;
 }
 
-.filter-item:hover {
+.checkbox-color:hover,
+.radio-bluetooth:hover {
 	opacity: 0.6;
 }
 
-.filter-item:active {
+.checkbox-color:active,
+.radio-bluetooth:active {
 	opacity: 1;
 }
 
@@ -1747,24 +1749,24 @@ a {
 	pointer-events: none;
 }
 
-.filter-item-input:disabled ~ .checkbox-color,
-.filter-item-input:disabled ~ .checkbox-indicator {
+.filter-item-input:disabled + label,
+.filter-item-input:disabled ~ span {
 	opacity: 0.25;
 }
 
 .filter-list {
-	margin-top: 19px;
+	margin-top: 18px;
 	margin-bottom: 30px;
 }
 
 .checkbox-color {
-	padding: 5px 0 5px 39px;
+	padding: 5px 0 5px 40px;
 
 	cursor: pointer;
 }
 
-input[type="checkbox"] ~ .checkbox-indicator,
-input[type="checkbox"] ~ .checkbox-color {
+.checkbox-item ~ .checkbox-indicator,
+.checkbox-item ~ .checkbox-color {
 	position: relative;
 
 	width: 23px;
@@ -1775,9 +1777,8 @@ input[type="checkbox"] ~ .checkbox-color {
 	background-position: left center;
 }
 
-input[type="checkbox"]:checked ~ .checkbox-indicator,
-input[type="checkbox"]:checked ~ .checkbox-color {
-	position: relative;
+.checkbox-item:checked ~ .checkbox-indicator,
+.checkbox-item:checked ~ .checkbox-color {
 	width: 27px;
 	height: 27px;
 
@@ -1787,32 +1788,24 @@ input[type="checkbox"]:checked ~ .checkbox-color {
 }
 
 .radio-bluetooth {
-	position: relative;
-
-	padding-left: 40px;
+	padding: 5px 0 5px 40px;
 
 	cursor: pointer;
 }
 
-.radio-bluetooth input[type="radio"] + .radio-indicator {
-	position: absolute;
-	top: -5px;
-	left: 0;
-
+.radio-item ~ .radio-indicator,
+.radio-item ~ .radio-bluetooth {
+	position: relative;
 	width: 25px;
 	height: 25px;
 
 	background-image: url("../img/icons/radio-off.svg");
+	background-repeat: no-repeat;
+	background-position: left center;
 }
 
-.radio-bluetooth input[type="radio"]:checked + .radio-indicator {
-	position: absolute;
-	top: -5px;
-	left: 0;
-
-	width: 25px;
-	height: 25px;
-
+.radio-item:checked ~ .radio-indicator,
+.radio-item:checked ~ .radio-bluetooth {
 	background-image: url("../img/icons/radio-on.svg");
 }
 
