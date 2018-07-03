@@ -9,7 +9,7 @@
         var storage = "";
 
         try {
-          userStorage = localStorage.getItem("userName");
+          userNameStorage = localStorage.getItem("userName");
           emailStorage = localStorage.getItem("email")
         } catch (err) {
           isStorageSupport = false;
@@ -19,11 +19,11 @@
           evt.preventDefault();
           formPopup.classList.add("modal-show");
 
-          if (userStorage) {
-            userName.value = userStorage;
+          if (userNameStorage) {
+            userName.value = userNameStorage;
             email.focus();
           } else {
-          userName.focus();
+            userName.focus();
           }
 
           if (emailStorage) {
@@ -31,7 +31,8 @@
             comment.focus();
           } else {
             email.focus();
-          }
+          }  
+
         });
 
         feedbackClose.addEventListener("click", function (evt) {
