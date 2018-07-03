@@ -5,11 +5,33 @@
         var userName = formPopup.querySelector("[name=name]");
         var email = formPopup.querySelector("[name=e-mail]");
         var comment = formPopup.querySelector("[name=comment]");
+        var isStorageSupport = true;
+        var storage = "";
+
+        try {
+          userStorage = localStorage.getItem("userName");
+          emailStorage = localStorage.getItem("email")
+        } catch (err) {
+          isStorageSupport = false;
+        }
 
         feedbackLink.addEventListener("click", function (evt) {
           evt.preventDefault();
           formPopup.classList.add("modal-show");
+
+          if (userStorage) {
+            userName.value = userStorage;
+            email.focus();
+          } else {
           userName.focus();
+          }
+
+          if (emailStorage) {
+            email.value = emailStorage;
+            comment.focus();
+          } else {
+            email.focus();
+          }
         });
 
         feedbackClose.addEventListener("click", function (evt) {
@@ -24,6 +46,11 @@
             formPopup.classList.add("modal-error");
             formPopup.offsetWidth = formPopup.offsetWidth;
             console.log("Заполните все поля");
+          } else {
+            if (isStorageSupport) {
+              localStorage.setItem ("userName", userName.value);
+              localStorage.setItem ("email", email.value);
+            }
           }
         });
 
