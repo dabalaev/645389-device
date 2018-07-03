@@ -514,6 +514,7 @@ a {
 	margin-left: 21px;
 	z-index: 5;
 
+	vertical-align: middle;
 	cursor: pointer;
 	background-image: url("../img/icons/slider-button-empty.svg");
 	background-position: center;
@@ -681,6 +682,8 @@ a {
 	padding: 0;
 	padding-right: 72px;
 	padding-bottom: 4px;
+
+	word-break: break-word;
 }
 
 /* categories */
@@ -725,6 +728,7 @@ a {
 	display: inline-block;
 	width: 160px;
 
+	vertical-align: middle;
 	color: rgba(0, 0, 0, 1);
 }
 
@@ -741,7 +745,7 @@ a {
 	justify-content: center;
 }
 
-.categories-svg-container--to-bottom {
+.categories-svg-container-bottom {
 	align-items: flex-end;
 }
 
@@ -1301,6 +1305,9 @@ a {
 .footer-user-link svg {
 	display: inline-block;
 	margin-right: 5px;
+	margin-bottom: 2px;
+
+	vertical-align: middle;
 
 	fill: #ffc600;
 }
@@ -1649,12 +1656,26 @@ a {
 	cursor: pointer;
 }
 
+.range-controls .toggle:active {
+	top: 23px;
+
+	border: 10px solid #ffffff;
+}
+
 .range-controls .toggle-min {
 	left: -6px;
 }
 
+.range-controls .toggle-min:active {
+	left: -8px;
+}
+
 .range-controls .toggle-max {
 	left: 107px;
+}
+
+.range-controls .toggle-max:active {
+	left: 105px;
 }
 
 .price-control {
@@ -2023,7 +2044,7 @@ a {
 }
 
 .catalog-item-price {
-	width: 100px;
+	max-width: 100px;
 	margin: 0;
 	padding: 0;
 	margin-left: auto;

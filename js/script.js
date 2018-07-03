@@ -1,9 +1,6 @@
         var feedbackLink = document.querySelector(".feedback");
-
         var formPopup = document.querySelector(".write-to-us");
-
-        var feedbackClose = formPopup.querySelector(".feedback-close");
-
+        var feedbackClose = formPopup.querySelector(".modal-close");
         var form = formPopup.querySelector("form");
         var userName = formPopup.querySelector("[name=name]");
         var email = formPopup.querySelector("[name=e-mail]");
@@ -41,10 +38,8 @@
         });
 
         var mapLink = document.querySelector(".contacts-button-map");
-
         var mapPopup = document.querySelector(".popup-map");
-
-        var mapClose = document.querySelector(".map-close");
+        var mapClose = mapPopup.querySelector(".modal-close");
 
         mapLink.addEventListener("click", function (evt) {
           evt.preventDefault();
