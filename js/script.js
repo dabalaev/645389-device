@@ -19,38 +19,13 @@
           evt.preventDefault();
           formPopup.classList.add("modal-show");
 
-          // if (emailStorage) {
-          //   email.value = emailStorage;
-          //   comment.focus();
-          // } else {
-          //   email.focus();
-          // }  
-
-          if (userNameStorage) {
+          if (emailStorage) {
             userName.value = userNameStorage;
-            email.focus();
-            if (emailStorage) {
-              email.value = emailStorage;
-              comment.focus();
-            } else {
-              email.focus();
-            }
+            email.value = emailStorage;
+            comment.focus();
           } else {
             userName.focus();
-          }
-
-          // if (userNameStorage) {
-          //   userName.value = userNameStorage;
-          //   if (emailStorage) {
-          //     email.value = emailStorage;
-          //     comment.focus();  
-          //   } else {
-          //     email.focus();
-          //   }
-          // } else {
-          //   userName.focus();
-          // }
-
+          }  
 
         });
 
@@ -63,13 +38,14 @@
         form.addEventListener("submit", function (evt) {
           if (!userName.value || !email.value || !comment.value) {
             evt.preventDefault();
-            formPopup.classList.add("modal-error");
+            formPopup.classList.remove("modal-error");
             formPopup.offsetWidth = formPopup.offsetWidth;
+            formPopup.classList.add("modal-error");
             console.log("Заполните все поля");
           } else {
             if (isStorageSupport) {
-              localStorage.setItem ("userName", userName.value);
-              localStorage.setItem ("email", email.value);
+              localStorage.setItem("userName", userName.value);
+              localStorage.setItem("email", email.value);
             }
           }
         });
