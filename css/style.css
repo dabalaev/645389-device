@@ -349,7 +349,7 @@ a {
 
 .user-navigation li:first-child {
 	width: 440px;
-	margin-right: auto;
+	margin-right: 76px;
 	margin-left: 0;
 
 	text-align: left;
@@ -357,8 +357,7 @@ a {
 
 .user-navigation li:nth-child(2) {
 	min-width: 252px;
-	margin-left: auto;
-
+	
 	text-align: left;
 }
 
@@ -469,7 +468,7 @@ a {
 
 .site-nav-item:nth-child(1) {
 	width: 300px;
-	margin-right: auto;
+	margin-right: 202px;
 	margin-left: 0;
 }
 
@@ -509,7 +508,7 @@ a {
 
 .sub-navigation {
 	position: absolute;
-	bottom: -165px;
+	bottom: -164px;
 	left: -60px;
 
 	display: none;
