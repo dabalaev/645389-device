@@ -26,24 +26,30 @@
           //   email.focus();
           // }  
 
-          // if (userNameStorage) {
-          //   userName.value = userNameStorage;
-          //   email.focus();
-          // } else {
-          //   userName.focus();
-          // }
-
           if (userNameStorage) {
             userName.value = userNameStorage;
+            email.focus();
             if (emailStorage) {
               email.value = emailStorage;
-              comment.focus();  
+              comment.focus();
             } else {
               email.focus();
             }
           } else {
             userName.focus();
           }
+
+          // if (userNameStorage) {
+          //   userName.value = userNameStorage;
+          //   if (emailStorage) {
+          //     email.value = emailStorage;
+          //     comment.focus();  
+          //   } else {
+          //     email.focus();
+          //   }
+          // } else {
+          //   userName.focus();
+          // }
 
 
         });
