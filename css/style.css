@@ -2070,6 +2070,8 @@ a {
 .sorting-priority-item {
 	font-size: 20px;
 	color: rgba(0, 0, 0, 0.3);
+
+	cursor: pointer;
 }
 
 .sorting-priority-item:hover {
@@ -2080,10 +2082,12 @@ a {
 	color: rgba(0, 0, 0, 1);
 }
 
+
 .sorting-active-item,
 .sorting-active-item:hover,
 .sorting-active-item:active {
 	color: rgba(0, 0, 0, 1);
+	pointer-events: none;
 }
 
 /* catalog */
