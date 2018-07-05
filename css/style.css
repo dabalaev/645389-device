@@ -759,20 +759,19 @@ a {
 	color: black;
 }
 
+.promo-slider-table td{
+	min-width: 140px;
+
+	word-break: break-word;
+
+}
+
 .promo-slider-table-value {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 300;
 	font-size: 36px;
 	line-height: 48px;
 	letter-spacing: 0.01em;
-}
-
-.promo-slider-table-value td {
-	padding: 0;
-	padding-right: 72px;
-	padding-bottom: 4px;
-
-	word-break: break-word;
 }
 
 /* categories */
