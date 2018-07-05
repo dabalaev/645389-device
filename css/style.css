@@ -1307,6 +1307,7 @@ a {
 
 .main-footer {
 	min-height: 323px;
+	min-width: 1200px;
 	color: #ffffff;
 	background-color: #464646;
 }
