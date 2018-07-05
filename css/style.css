@@ -1556,7 +1556,7 @@ a {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	width: 1160px;
+	width: 1040px;
 	margin: 0;
 	padding: 0;
 	margin-left: 80px;
@@ -1639,7 +1639,7 @@ a {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	width: 1242px;
+	width: 1200px;
 	padding: 0;
 }
 
