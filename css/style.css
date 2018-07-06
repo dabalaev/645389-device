@@ -87,7 +87,7 @@ a {
 	background-color: transparent;
 	
 	word-wrap: break-word;
-	outline: none;
+	/*outline: none;*/
 	border: none;
 	cursor: pointer;
 }
@@ -565,7 +565,7 @@ a {
 .promo-slider {
 	position: relative;
 	
-	/*min-height: 550px;*/
+	min-height: 550px;
 	margin-bottom: 43px;
 }
 
@@ -610,7 +610,6 @@ a {
 	display: -ms-flexbox;
 	display: flex;
 	width: 1160px;
-	min-height: 550px;
 	margin-left: 20px;
 	margin-top: -127px;
 }
@@ -1310,10 +1309,11 @@ a {
 	position: relative;
 
 	min-height: 323px;
-	min-width: 1200px;
+	/*min-width: 1200px;*/
 	color: #ffffff;
 	background-color: #464646;
 }
+
 
 .main-footer a {
 	color: rgba(255, 255, 255, 1);
@@ -1841,6 +1841,10 @@ a {
 	color: #000000;
 }
 
+.filter-item-input:focus + label {
+	outline: 2px solid lightblue;
+}
+
 .filter-item {
 	position: relative;
 }
@@ -2112,6 +2116,9 @@ a {
 	opacity: 1;
 }
 
+.sorting-priority-item:focus::before {
+	outline: 2px solid blue;
+}
 
 .sorting-active-item,
 .sorting-active-item:hover,
