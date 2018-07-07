@@ -1309,7 +1309,7 @@ a {
 	position: relative;
 
 	min-height: 323px;
-	/*min-width: 1200px;*/
+	min-width: 1200px;
 	color: #ffffff;
 	background-color: #464646;
 }
@@ -1751,10 +1751,11 @@ a {
 	position: absolute;
 	top: 25px;
 
-	width: 4px;
-	height: 4px;
+	width: 20px;
+	height: 20px;
 	padding: 0;
 
+	border: none;
 	border: 8px solid #ffffff;
 	background-color: #ababab;
 	-webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
@@ -1764,9 +1765,12 @@ a {
 }
 
 .range-controls .toggle:active {
-	top: 23px;
+	top: 24px;
 
-	border: 10px solid #ffffff;
+	width: 22px;
+	height: 22px;
+
+	border: 9px solid #ffffff;
 }
 
 .range-controls .toggle-min {
@@ -1774,7 +1778,7 @@ a {
 }
 
 .range-controls .toggle-min:active {
-	left: -8px;
+	left: -7px;
 }
 
 .range-controls .toggle-max {
@@ -1782,7 +1786,7 @@ a {
 }
 
 .range-controls .toggle-max:active {
-	left: 105px;
+	left: 106px;
 }
 
 .price-control {
